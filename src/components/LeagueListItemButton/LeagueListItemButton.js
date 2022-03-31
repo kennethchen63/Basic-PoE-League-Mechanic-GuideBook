@@ -1,5 +1,6 @@
 import React from "react";
 import {ListItem, Typography } from '@material-ui/core'
+import { Link } from "react-router-dom";
 
 
 const LeagueListItemButton = ({name}) => {
@@ -7,7 +8,7 @@ const LeagueListItemButton = ({name}) => {
 
     return (
         <div>
-            <ListItem divider button onClick={() => console.log("clicked")}>
+            <ListItem divider button component={Link} to={`/${name}`}>
                 <Typography>
                     {name}
                 </Typography>

@@ -2,7 +2,6 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import LeagueList from "../components/LeagueList/LeagueList";
 
-
 function Abyss() {
 
     return (

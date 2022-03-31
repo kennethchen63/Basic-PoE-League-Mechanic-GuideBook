@@ -36,10 +36,10 @@ const LeagueList = ({m}) => {
                     <LeagueListItemButton name={"Blight"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Legion"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Synthesis"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Betrayal/Syndicate"}></LeagueListItemButton>
+                    <LeagueListItemButton name={"Betrayal"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Delve"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Incursion/Alva"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Bestiary/Einhar"}></LeagueListItemButton>
+                    <LeagueListItemButton name={"Incursion"}></LeagueListItemButton>
+                    <LeagueListItemButton name={"Bestiary"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Abyss"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Harbinger"}></LeagueListItemButton>
                     <LeagueListItemButton name={"Breach"}></LeagueListItemButton>
