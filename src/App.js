@@ -1,7 +1,8 @@
 import React from 'react';
 import {AppBar, Typography, Toolbar, Button, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Topbar from './components/Topbar';
 import Home from './Pages/Home'
 import Ambush from './Pages/Ambush'
 import Abyss from './Pages/Abyss';
@@ -40,24 +41,31 @@ const App = () => {
 
     return (
         <BrowserRouter>
+            <Topbar />
+            <Routes>
+                <Route path = '/' exact />
+            </Routes>
+            {/* <body>
+            <nav className = "topbar">
+                <div className = "topbar_container">
+                    <a href = "/" id = "POElogo"> PATH OF EXILE LEAGUES </a>
+                    <div class = "topbar_toggle" id = "mobile-menu">
+                         <span class = "bar"> </span>
+                        <span class = "bar"> </span>
+                    </div>
+                    <ul class = "topbar_menu">
+                         <li class = "topbar_item">
+                             
+                             <a href = "/" class = "topbar_links"> Sign Up </a>
+                        </li>
+                     </ul>
+                 </div>
+            </nav>
+             </body>*/}
+            
             <div>
-                <Grid container>
-                    <Grid item xs={12} container>
-                        <AppBar color="primary">
-                            <Toolbar>
-                                <Typography>
-                                    Logo Here
-                                </Typography>
-                                <Typography variant="h2" className={classes.title}>
-                                Path of Exile League Mechanics  
-                                </Typography>
-                                <Button>
-                                    Login
-                                </Button>
-                            </Toolbar>
-                        </AppBar>
-                    </Grid>
-                </Grid>
+                
+                
                     <Routes>
                         <Route path="/" element={<Home/> }/>
                         <Route path="/Abyss" element={<Abyss/> }/>
