@@ -1,16 +1,35 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Box, makeStyles, Typography } from "@material-ui/core";
 import LeagueList from "../components/LeagueList/LeagueList";
+
+const useStyles = makeStyles(theme => ({
+    l_desc: {
+        width: '100%',
+        height: 950, 
+        backgroundColor: 'gray', 
+        marginTop: 64,
+        marginLeft: 8,
+    },
+}));
 
 function Abyss() {
 
+    const classes = useStyles();
+
     return (
         <div>
-            Abyss
             <Grid container>
-                <LeagueList m={44}/>
+                <Grid item>
+                    <LeagueList m={56}/>
+                </Grid>
+                <Grid item xs={11}>
+                    <Box className={classes.l_desc}>
+                        <Typography align="center" variant="h2">
+                            Abyss
+                        </Typography>
+                    </Box>
+                </Grid>
             </Grid>
-
         </div>
     )
 }

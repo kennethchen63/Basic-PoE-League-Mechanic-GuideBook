@@ -27,11 +27,15 @@ import Nemesis from './Pages/Nemesis';
 import Ritual from './Pages/Ritual';
 import Synthesis from './Pages/Synthesis';
 import Torment from './Pages/Torment';
+import ErrorPage from './Pages/ErrorPage';
 
 const useStyles = makeStyles(theme => ({
     title: {
       flexGrow: 1,
       textAlign: 'center',
+    },
+    button: {
+        textTransform: "none",
     },
 }));
 
@@ -67,30 +71,31 @@ const App = () => {
                 
                 
                     <Routes>
-                        <Route path="/" element={<Home/> }/>
-                        <Route path="/Abyss" element={<Abyss/> }/>
-                        <Route path="/Ambush" element={<Ambush/> }/>
-                        <Route path="/Bestiary" element={<Bestiary/> }/>
-                        <Route path="/Betrayal" element={<Betrayal/> }/>
-                        <Route path="/Beyond" element={<Beyond/> }/>
-                        <Route path="/Blight" element={<Blight/> }/>
-                        <Route path="/Bloodlines" element={<Bloodlines/> }/>
-                        <Route path="/Breach" element={<Breach/> }/>
-                        <Route path="/Delirium" element={<Delirium/> }/>
-                        <Route path="/Delve" element={<Delve/> }/>
-                        <Route path="/Essence" element={<Essence/> }/>
-                        <Route path="/Expedition" element={<Expedition/> }/>
-                        <Route path="/Harbinger" element={<Harbinger/> }/>
-                        <Route path="/Harvest" element={<Harvest/> }/>
-                        <Route path="/Heist" element={<Heist/> }/>
-                        <Route path="/Incursion" element={<Incursion/> }/>
-                        <Route path="/Invasion" element={<Invasion/> }/>
-                        <Route path="/Legion" element={<Legion/> }/>
-                        <Route path="/Metamorph" element={<Metamorph/> }/>
-                        <Route path="/Nemesis" element={<Nemesis/> }/>
-                        <Route path="/Ritual" element={<Ritual/> }/>
-                        <Route path="/Synthesis" element={<Synthesis/> }/>
-                        <Route path="/Torment" element={<Torment/> }/>
+                        <Route exact path="/" element={<Home/> }/>
+                        <Route exact path="/Abyss" element={<Abyss/> }/>
+                        <Route exact path="/Ambush" element={<Ambush/> }/>
+                        <Route exact path="/Bestiary" element={<Bestiary/> }/>
+                        <Route exact path="/Betrayal" element={<Betrayal/> }/>
+                        <Route exact path="/Beyond" element={<Beyond/> }/>
+                        <Route exact path="/Blight" element={<Blight/> }/>
+                        <Route exact path="/Bloodlines" element={<Bloodlines/> }/>
+                        <Route exact path="/Breach" element={<Breach/> }/>
+                        <Route exact path="/Delirium" element={<Delirium/> }/>
+                        <Route exact path="/Delve" element={<Delve/> }/>
+                        <Route exact path="/Essence" element={<Essence/> }/>
+                        <Route exact path="/Expedition" element={<Expedition/> }/>
+                        <Route exact path="/Harbinger" element={<Harbinger/> }/>
+                        <Route exact path="/Harvest" element={<Harvest/> }/>
+                        <Route exact path="/Heist" element={<Heist/> }/>
+                        <Route exact path="/Incursion" element={<Incursion/> }/>
+                        <Route exact path="/Invasion" element={<Invasion/> }/>
+                        <Route exact path="/Legion" element={<Legion/> }/>
+                        <Route exact path="/Metamorph" element={<Metamorph/> }/>
+                        <Route exact path="/Nemesis" element={<Nemesis/> }/>
+                        <Route exact path="/Ritual" element={<Ritual/> }/>
+                        <Route exact path="/Synthesis" element={<Synthesis/> }/>
+                        <Route exact path="/Torment" element={<Torment/> }/>
+                        <Route path='*' element={<ErrorPage/>}/>
                     </Routes>
             </div>      
         </BrowserRouter>

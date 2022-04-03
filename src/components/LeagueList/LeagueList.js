@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, List, Grid, Typography } from "@material-ui/core";
+import { Box, List, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import LeagueListItemButton from "../LeagueListItemButton/LeagueListItemButton";
 
@@ -12,8 +12,6 @@ const useStyles = makeStyles(theme => ({
         maxHeight: 1000, 
         backgroundColor: 'dimgrey', 
         overflow: 'auto',
-        //margin: -8, 
-        // marginTop: 54,
     },
 }));
 
@@ -25,33 +23,33 @@ const LeagueList = ({m}) => {
     return (
         <div>
             <Grid item xs={12} container>
-            <Box sx={{margin: -8, marginTop: m}} className={classes.list}>
-                <List>
-                    <LeagueListItemButton name={"Expedition"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Ritual"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Heist"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Harvest"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Delirium"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Metamorph"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Blight"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Legion"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Synthesis"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Betrayal"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Delve"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Incursion"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Bestiary"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Abyss"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Harbinger"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Breach"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Essence"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Torment"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Bloodlines"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Beyond"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Ambush"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Invasion"}></LeagueListItemButton>
-                    <LeagueListItemButton name={"Nemesis"}></LeagueListItemButton>
-                </List>
-            </Box>
+                <Box sx={{margin: -8, marginTop: m}} className={classes.list}>
+                    <List>
+                        <LeagueListItemButton name={"Abyss"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Ambush"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Bestiary"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Betrayal"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Beyond"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Blight"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Bloodlines"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Breach"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Delirium"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Delve"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Essence"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Expedition"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Harbinger"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Harvest"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Heist"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Incursion"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Invasion"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Legion"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Metamorph"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Nemesis"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Ritual"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Synthesis"}></LeagueListItemButton>
+                        <LeagueListItemButton name={"Torment"}></LeagueListItemButton>
+                    </List>
+                </Box>
             </Grid>
         </div>
     )

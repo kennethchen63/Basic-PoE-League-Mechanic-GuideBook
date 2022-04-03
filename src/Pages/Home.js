@@ -50,7 +50,9 @@ function Home() {
     return (
     <div>
         <Grid container>
-           <LeagueList m={56}/>
+            <Grid item>
+                <LeagueList m={56}/>
+            </Grid>
             <Grid item xs={11} container spacing={2}>
                 <Box className={classes.l_title}>
                     <Typography align="center" variant="h2" >
