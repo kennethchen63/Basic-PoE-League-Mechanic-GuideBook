@@ -9,7 +9,7 @@ function ErrorPage() {
     return (
         <div>
             <Grid container>
-                <Box sx={{marginTop: 44}}>
+                <Box>
                     <Typography variant="h1">
                         404 - Page not Found
                     </Typography>        

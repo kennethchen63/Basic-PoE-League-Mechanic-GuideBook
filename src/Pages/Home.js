@@ -1,7 +1,6 @@
 import React from "react";
 import {Typography, Box, Grid, ImageList, ImageListItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import LeagueList from "../components/LeagueList/LeagueList";
 
 import Expedition from '../images/Expedition.jpg'
 
@@ -11,9 +10,6 @@ const useStyles = makeStyles(theme => ({
         height: 200,
         maxHeight: 900, 
         backgroundColor: 'green', 
-        marginTop: 64,
-        spacing: 30,
-        marginLeft: 16,
     },
     l_intro: {
         width: '100%', 
@@ -50,10 +46,7 @@ function Home() {
     return (
     <div>
         <Grid container>
-            <Grid item>
-                <LeagueList m={56}/>
-            </Grid>
-            <Grid item xs={11} container spacing={2}>
+            <Grid item xs={12}>
                 <Box className={classes.l_title}>
                     <Typography align="center" variant="h2" >
                         Welcome to the site where you can learn about the basics of Path of Exile's League Mechanics!

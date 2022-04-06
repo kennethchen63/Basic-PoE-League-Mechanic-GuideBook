@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Box, makeStyles, Typography, TableContainer, Table, TableHead, TableCell, TableRow, TableBody, Paper } from "@material-ui/core";
-import LeagueList from "../components/LeagueList/LeagueList";
 import Tormentpic from '../images/Torment.png';
 
 const useStyles = makeStyles(theme => ({
@@ -8,8 +7,6 @@ const useStyles = makeStyles(theme => ({
         width: '100%',
         height: 950, 
         backgroundColor: 'gray', 
-        marginTop: 64,
-        marginLeft: 8,
     },
 }));
 
@@ -55,10 +52,7 @@ function Torment() {
     return (
         <div>     
             <Grid container>
-                <Grid item>
-                    <LeagueList m={56}/>
-                </Grid>
-                <Grid container xs={11} alignItems="center" justifyContent="center">
+                <Grid container xs={12} alignItems="center" justifyContent="center">
                     <Box className={classes.l_desc}>
                         <Typography align="center" variant="h2">
                             Torment
