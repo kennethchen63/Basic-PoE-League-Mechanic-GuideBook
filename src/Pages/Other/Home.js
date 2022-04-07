@@ -2,7 +2,7 @@ import React from "react";
 import {Typography, Box, Grid, ImageList, ImageListItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Expedition from '../images/Expedition.jpg'
+import Expedition from '../../images/Expedition.jpg'
 
 const useStyles = makeStyles(theme => ({
     l_title: {
