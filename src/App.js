@@ -23,8 +23,8 @@ import Legion from './Pages/Legion';
 import Metamorph from './Pages/Metamorph';
 import Nemesis from './Pages/Nemesis';
 import Ritual from './Pages/Ritual';
-import Synthesis from './Pages/Synthesis';
-import Torment from './Pages/Torment';
+import Synthesis from './Pages/Synthesis/Synthesis';
+import Torment from './Pages/Torment/Torment';
 import ErrorPage from './Pages/ErrorPage';
 
 const App = () => {
