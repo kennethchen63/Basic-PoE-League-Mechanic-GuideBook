@@ -6,7 +6,7 @@ import TormentDescPic from "./Components/TormentDesc";
 const useStyles = makeStyles(theme => ({
     l_desc: {
         width: '100%',
-        height: 950, 
+        height: "100%", 
         backgroundColor: 'gray', 
     },
 }));
@@ -16,21 +16,19 @@ function Torment() {
 
     const classes = useStyles();
 
-    return (
-        <div>     
-            <Grid container>
-                <Grid container xs={12} alignItems="center" justifyContent="center">
-                    <Box className={classes.l_desc}>
-                        <div>
-                            <TormentDescPic/>
-                        </div>
-                        <div>
-                            <TormentTable/>
-                        </div>
-                    </Box>
-                </Grid>
+    return (   
+        <Grid container>
+            <Grid container xs={12}>
+                <Box className={classes.l_desc}>
+                    <div>
+                        <TormentDescPic/>
+                    </div>
+                    <div>
+                        <TormentTable/>
+                    </div>
+                </Box>
             </Grid>
-        </div>
+        </Grid>
     )
 }
 
