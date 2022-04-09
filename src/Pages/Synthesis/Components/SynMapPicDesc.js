@@ -12,35 +12,40 @@ function SynMapPicDesc() {
     const [cortex, setCortex] = useState(false);
 
     return (
-        <Grid container justifyContent="space-between">
+        <Grid container justifyContent="space-around">
             <Grid item xs={2}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container justifyContent="center">
                     <Typography>
                         Altered Distant Memory
                     </Typography>
-                    <Box component="img" src={`${Altered}`} align="center" 
+                    <Box 
+                        component="img" 
+                        src={`${Altered}`} 
                         width={325} 
                         height={375} 
                     />
                 </Grid>
             </Grid>
             <Grid item xs={2}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container justifyContent="center">
                         <Typography>
                             Augmented Distant Memory
                         </Typography>
-                        <Box component="img" src={`${Augmented}`} align="center" 
+                        <Box 
+                            component="img" 
+                            src={`${Augmented}`} 
                             width={325} 
                             height={375} 
                         />
                     </Grid>
                 </Grid>
             <Grid item xs={2}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container justifyContent="center">
                         <Typography>
                             Cortex/Replica Cortex
                         </Typography>
-                        <Box component="img" align="center" 
+                        <Box 
+                            component="img"
                             maxWidth={325} // 375
                             maxHeight={375}  // 442
                             onClick={() => setCortex(prevMode => !prevMode)}
@@ -49,22 +54,26 @@ function SynMapPicDesc() {
                 </Grid>
             </Grid>
             <Grid item xs={2}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container justifyContent="center">
                         <Typography>
                             Rewritten Distant Memory
                         </Typography>
-                        <Box component="img" src={`${Rewritten}`} align="center" 
+                        <Box 
+                            component="img" 
+                            src={`${Rewritten}`} 
                             width={325} 
                             height={375} 
                         />
                     </Grid>
                 </Grid>
             <Grid item xs={2}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container justifyContent="center">
                     <Typography>
                         Twisted Distant Memory
                     </Typography>
-                    <Box component="img" src={`${Twisted}`} align="center" 
+                    <Box 
+                        component="img" 
+                        src={`${Twisted}`}
                         width={325} 
                         height={375} 
                     />
