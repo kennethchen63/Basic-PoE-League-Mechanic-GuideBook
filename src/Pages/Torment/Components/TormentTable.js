@@ -43,8 +43,8 @@ function TormentTable() {
     const classes = useStyles();
 
     return (
-        <TableContainer style={{maxHeight: 555, backgroundColor: "white"}}component={Paper}>
-            <Table sx={{ minWidth: 650 }}>
+        <TableContainer style={{backgroundColor: "white"}}component={Paper}>
+            <Table>
                 <TableHead>
                     <TableRow>
                         <TableCell align="left"> 
