@@ -1,26 +1,26 @@
 import React from "react";
 import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Paper, Typography, Box, List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
-import Apocalyptic from "../images/Apocalyptic.webp";
-import Bitter from "../images/Bitter.webp";
-import Charged from "../images/Charged.webp";
-import Dreaded from "../images/Dreaded.webp";
-import Emboldening from "../images/Emboldening.webp";
-import Ensconced from "../images/Ensconced.webp";
-import Fluctuant from "../images/Fluctuant.webp";
-import Fortressed from "../images/Fortressed.webp";
-import Foul from "../images/Foul.webp";
-import Glacial from "../images/Glacial.webp";
-import Haunted from "../images/Haunted.webp";
-import Infernal from "../images/Infernal.webp";
-import Invigorating from "../images/Invigorating.webp";
-import Malevolent from "../images/Malevolent.webp";
-import Opulent from "../images/Opulent.webp";
-import Sanguine from "../images/Sanguine.webp";
-import Suppressive from "../images/Suppressive.webp";
-import Vaal from "../images/Vaal.webp";
-import Violent from "../images/Violent.webp";
-import Volatile from "../images/Volatile.webp";
+import Apocalyptic from "../Images/Apocalyptic.webp";
+import Bitter from "../Images/Bitter.webp";
+import Charged from "../Images/Charged.webp";
+import Dreaded from "../Images/Dreaded.webp";
+import Emboldening from "../Images/Emboldening.webp";
+import Ensconced from "../Images/Ensconced.webp";
+import Fluctuant from "../Images/Fluctuant.webp";
+import Fortressed from "../Images/Fortressed.webp";
+import Foul from "../Images/Foul.webp";
+import Glacial from "../Images/Glacial.webp";
+import Haunted from "../Images/Haunted.webp";
+import Infernal from "../Images/Infernal.webp";
+import Invigorating from "../Images/Invigorating.webp";
+import Malevolent from "../Images/Malevolent.webp";
+import Opulent from "../Images/Opulent.webp";
+import Sanguine from "../Images/Sanguine.webp";
+import Suppressive from "../Images/Suppressive.webp";
+import Vaal from "../Images/Vaal.webp";
+import Violent from "../Images/Violent.webp";
+import Volatile from "../Images/Volatile.webp";
 
 
 
