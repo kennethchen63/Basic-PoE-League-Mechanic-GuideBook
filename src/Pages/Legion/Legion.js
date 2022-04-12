@@ -1,10 +1,15 @@
 import React from "react";
-import { Grid, Box, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Box, makeStyles } from "@material-ui/core";
+import LegionDesc from "./Components/LegionDesc";
+import LegionTable from "./Components/LegionTable";
+import Timeless from "./Components/Timeless"
+import LegionJewelsTable from "./Components/LegionJewelsTable";
+import LegionJewels from "./Components/LegionJewels";
 
 const useStyles = makeStyles(theme => ({
     l_desc: {
         width: '100%',
-        height: 950, 
+        height: "100%",
         backgroundColor: 'gray', 
     },
 }));
@@ -18,9 +23,21 @@ function Legion() {
             <Grid container>
                 <Grid item xs={12}>
                     <Box className={classes.l_desc}>
-                        <Typography align="center" variant="h2">
-                            Legion
-                        </Typography>
+                        <div>
+                            <LegionDesc/>
+                        </div>
+                        <div>
+                            <LegionTable/>
+                        </div>
+                        <div>
+                            <Timeless/>
+                        </div>
+                        <div>
+                            <LegionJewels/>
+                        </div>
+                        <div>
+                            <LegionJewelsTable/>
+                        </div>
                     </Box>
                 </Grid>
             </Grid>
