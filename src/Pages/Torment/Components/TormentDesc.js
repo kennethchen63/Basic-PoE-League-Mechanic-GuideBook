@@ -14,7 +14,7 @@ function TormentDescPic() {
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>
-                    The Torment league mechanics introduces new tormented spirits that have special powers.
+                    The Torment league mechanic introduces new tormented spirits that have special powers.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">

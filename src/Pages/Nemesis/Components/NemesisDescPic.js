@@ -10,7 +10,7 @@ function NemesisDescPic() {
             </Typography>
             <Grid container justifyContent="center">
                 <Typography>
-                    The Nemesis league mechanics introduces modifiers to rare monsters shown in bolded yellow.
+                    The Nemesis league mechanic introduces modifiers to rare monsters shown in bolded yellow.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">

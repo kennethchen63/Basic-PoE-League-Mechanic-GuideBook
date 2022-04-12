@@ -14,7 +14,7 @@ function RitualDesc() {
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>
-                    The Ritual league mechanics introduces Rituals Altars that appear 3-4 times in every zone.
+                    The Ritual league mechanic introduces Rituals Altars that appear 3-4 times in maps.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">

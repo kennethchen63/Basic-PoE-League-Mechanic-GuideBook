@@ -17,7 +17,7 @@ function LegionDesc() {
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>
-                    The Legion league mechanics introduces the Timeless Monolith in maps.
+                    The Legion league mechanic introduces the Timeless Monolith in maps.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">

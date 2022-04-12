@@ -15,7 +15,7 @@ function MetaDesc() {
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>
-                    The Metamorph league mechanics introduces the metamorph system maps.
+                    The Metamorph league mechanic introduces the metamorph system in maps.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">

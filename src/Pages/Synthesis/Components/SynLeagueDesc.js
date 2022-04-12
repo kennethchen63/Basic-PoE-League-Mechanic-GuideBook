@@ -18,7 +18,7 @@ function SynLeagueDesc() {
             <div>
                 <Grid container justifyContent="center">
                     <Typography>
-                        The Synthesis league mechanics introduces new unique maps that have randomized map modifiers.
+                        The Synthesis league mechanic introduces new unique maps that have randomized map modifiers.
                     </Typography>
                 </Grid>
             </div>
