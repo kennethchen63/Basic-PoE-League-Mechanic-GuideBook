@@ -1,10 +1,13 @@
 import React from "react";
-import { Grid, Box, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Box, makeStyles } from "@material-ui/core";
+import IncursionDesc from "./Components/IncursionDesc";
+import IncursionRoom from "./Components/IncursionRoom";
+import IncursionTable from "./Components/IncursionTable";
 
 const useStyles = makeStyles(theme => ({
     l_desc: {
         width: '100%',
-        height: 950, 
+        height: "100%", 
         backgroundColor: 'gray', 
     },
 }));
@@ -18,9 +21,15 @@ function Incursion() {
             <Grid container>
                 <Grid item xs={12}>
                     <Box className={classes.l_desc}>
-                        <Typography align="center" variant="h2">
-                            Incursion
-                        </Typography>
+                        <div>
+                            <IncursionDesc/>
+                        </div>
+                        <div>
+                            <IncursionRoom/>
+                        </div>
+                        <div>
+                            <IncursionTable/>
+                        </div>
                     </Box>
                 </Grid>
             </Grid>
