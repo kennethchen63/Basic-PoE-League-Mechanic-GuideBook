@@ -18,7 +18,6 @@ import Harbinger from './Pages/Harbinger/Harbinger';
 import Harvest from './Pages/Harvest/Harvest';
 import Heist from './Pages/Heist/Heist';
 import Incursion from './Pages/Incursion/Incursion';
-import Invasion from './Pages/Invasion/Invasion';
 import Legion from './Pages/Legion/Legion';
 import Metamorph from './Pages/Metamorph/Metamorph';
 import Nemesis from './Pages/Nemesis/Nemesis';
@@ -51,7 +50,6 @@ const App = () => {
                     <Route exact path="/Harvest" element={<Harvest/> }/>
                     <Route exact path="/Heist" element={<Heist/> }/>
                     <Route exact path="/Incursion" element={<Incursion/> }/>
-                    <Route exact path="/Invasion" element={<Invasion/> }/>
                     <Route exact path="/Legion" element={<Legion/> }/>
                     <Route exact path="/Metamorph" element={<Metamorph/> }/>
                     <Route exact path="/Nemesis" element={<Nemesis/> }/>
