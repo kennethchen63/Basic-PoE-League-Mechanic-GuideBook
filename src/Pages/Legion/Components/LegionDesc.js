@@ -48,7 +48,7 @@ function LegionDesc() {
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>
-                    These generals can be seen by a faint purple glow flowing from the Monolith upon interacton. Below is an iamge as an example.
+                    These generals can be seen by a faint purple glow flowing from the Monolith upon interacton. Below is an image as an example.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">
@@ -57,6 +57,11 @@ function LegionDesc() {
             <Grid container justifyContent="center">
                 <Typography>
                     There are a total of 5 fractions (Maraketh, Karui, Vaal, Templar, Eternal), the rarest and most valued being Maraketh.
+                </Typography>
+            </Grid>
+            <Grid container justifyContent="center">
+                <Typography>
+                    Once you have obtained 100 splinters, they will form an Emblem. The Unrelenting Emblems are extremely difficult and are only found in the Domain of Timeless Conflict.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">
