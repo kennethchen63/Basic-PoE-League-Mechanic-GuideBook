@@ -1,5 +1,5 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, Grid, makeStyles} from "@material-ui/core";
 import Agility from "../Images/Jobs/Agility.webp"
 import Brute from "../Images/Jobs/Brute.webp"
 import Counter from "../Images/Jobs/Counter.webp"
@@ -64,63 +64,68 @@ function RewardTable() {
     const classes = useStyles();
 
     return (
-        <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
-            <Table>
-                <TableHead>
-                    <TableRow>
-                        <TableCell align="left">
-                            <Typography className={classes.bold}>
-                                Reward Type
-                            </Typography>
-                        </TableCell>
-                        <TableCell align="left"> 
-                            <Typography className={classes.bold}>
-                                Drops
-                            </Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                            <Typography className={classes.bold}>
-                                Skill
-                            </Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                            <Typography className={classes.bold}>
-                                Skill Icon
-                            </Typography>
-                        </TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                {data.map((data) => (
-                    <TableRow>
-                        <TableCell style={{width: '25%'}}> {data.type} </TableCell>
-                        <TableCell style={{width: '25%'}}> {data.drops} </TableCell>
-                        <TableCell style={{width: '25%'}}> 
-                            {data.skills.map((skills) => (
-                                <TableRow>
-                                    <TableCell style={{borderBottom: "none"}}>
-                                        {skills}
-                                    </TableCell>
-                                </TableRow>
-                            ))} 
-                        </TableCell>
-                        <TableCell style={{width: '25%'}}> 
-                            {data.icons.map((icons) => (
-                                <TableRow>
-                                    <TableCell style={{borderBottom: "none"}}>
-                                        <Box 
-                                            component="img"
-                                            src={`${icons}`}
-                                        />
-                                    </TableCell>
-                                </TableRow>
-                            ))} 
-                        </TableCell>
-                    </TableRow>
-                ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+        <Grid container justifyContent="center">
+            <Typography variant="h2">
+                Rogues
+            </Typography>
+            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell align="left">
+                                <Typography className={classes.bold}>
+                                    Reward Type
+                                </Typography>
+                            </TableCell>
+                            <TableCell align="left"> 
+                                <Typography className={classes.bold}>
+                                    Drops
+                                </Typography>
+                            </TableCell>
+                            <TableCell align="left">
+                                <Typography className={classes.bold}>
+                                    Skill
+                                </Typography>
+                            </TableCell>
+                            <TableCell align="left">
+                                <Typography className={classes.bold}>
+                                    Skill Icon
+                                </Typography>
+                            </TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                    {data.map((data) => (
+                        <TableRow>
+                            <TableCell style={{width: '25%'}}> {data.type} </TableCell>
+                            <TableCell style={{width: '25%'}}> {data.drops} </TableCell>
+                            <TableCell style={{width: '25%'}}> 
+                                {data.skills.map((skills) => (
+                                    <TableRow>
+                                        <TableCell style={{borderBottom: "none"}}>
+                                            {skills}
+                                        </TableCell>
+                                    </TableRow>
+                                ))} 
+                            </TableCell>
+                            <TableCell style={{width: '25%'}}> 
+                                {data.icons.map((icons) => (
+                                    <TableRow>
+                                        <TableCell style={{borderBottom: "none"}}>
+                                            <Box 
+                                                component="img"
+                                                src={`${icons}`}
+                                            />
+                                        </TableCell>
+                                    </TableRow>
+                                ))} 
+                            </TableCell>
+                        </TableRow>
+                    ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Grid>
     )
 }
 
