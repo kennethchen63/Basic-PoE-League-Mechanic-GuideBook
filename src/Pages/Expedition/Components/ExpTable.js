@@ -40,7 +40,7 @@ const data = [
 ]
 
 
-function NPCTable() {
+function ExpTable() {
 
     const classes = useStyles();
 
@@ -149,4 +149,4 @@ function NPCTable() {
     )
 }
 
-export default NPCTable;
+export default ExpTable;

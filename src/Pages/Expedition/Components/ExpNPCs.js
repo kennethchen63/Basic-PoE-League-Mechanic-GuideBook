@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@material-ui/core";
-import NPCTable from "./NPCTable";
+import ExpTable from "./ExpTable";
 
 function ExpNPCs() {
 
@@ -34,7 +34,7 @@ function ExpNPCs() {
                    Note: You can reroll the Implicits on logbooks with Blessed Orbs. Focus on pathing to the bosses/hidden areas first if you have any, then focus on obtaining remnant/reward modifiers that you would want. (Bosses are also affected by the modifiers)
                 </Typography>
             </Grid>
-            <NPCTable/>
+            <ExpTable/>
         </Grid>
     )
 }
