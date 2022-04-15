@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography } from "@material-ui/core";
-// import UniqueTable from './UniqueTable';
+import UniqueTable from './UniqueTable';
 
 function UniqueContract () {
 
@@ -19,7 +19,7 @@ function UniqueContract () {
                     Below is a table list of the unique contracts and their drops.
                 </Typography>
             </Grid>
-            {/* <UniqueTable/> */}
+            <UniqueTable/>
         </Grid>
     )
 }
