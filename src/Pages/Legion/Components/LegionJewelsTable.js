@@ -1,6 +1,5 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
 import ElegantHubris from "../Images/ElegantHubris.webp";
 import LethalPride from "../Images/LethalPride.webp";
 import BrutalRestraint from "../Images/BrutalRestraint.webp";

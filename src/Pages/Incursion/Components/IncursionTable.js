@@ -1,6 +1,5 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     bold: {

@@ -1,9 +1,8 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box, makeStyles } from "@material-ui/core";
 import Incursion from "../../../images/Incursion.jpg"
 import AlvaIncursion from "../Images/AlvaIncursion.JPG"
 import Stone from "../Images/Stone.JPG"
-import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     bold: {

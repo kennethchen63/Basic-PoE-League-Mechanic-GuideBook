@@ -1,6 +1,5 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
 import EternalSplinter from "../Images/EternalSplinter.webp"
 import EternalEmblem from "../Images/EternalEmblem.webp"
 import EternalUnrelent from "../Images/EternalUnrelent.webp"
