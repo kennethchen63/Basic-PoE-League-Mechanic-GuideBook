@@ -1,15 +1,14 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
-import Agility from "../Images/Agility.webp"
-import Brute from "../Images/Brute.webp"
-import Counter from "../Images/Counter.webp"
-import Demolition from "../Images/Demolition.webp"
-import Deception from "../Images/Deception.webp"
-import Engineer from "../Images/Engineer.webp"
-import Lockpick from "../Images/Lockpick.webp"
-import Perception from "../Images/Perception.webp"
-import Trap from "../Images/Trap.webp"
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import Agility from "../Images/Jobs/Agility.webp"
+import Brute from "../Images/Jobs/Brute.webp"
+import Counter from "../Images/Jobs/Counter.webp"
+import Demolition from "../Images/Jobs/Demolition.webp"
+import Deception from "../Images/Jobs/Deception.webp"
+import Engineer from "../Images/Jobs/Engineer.webp"
+import Lockpick from "../Images/Jobs/Lockpick.webp"
+import Perception from "../Images/Jobs/Perception.webp"
+import Trap from "../Images/Jobs/Trap.webp"
 
 const useStyles = makeStyles(theme => ({
     bold: {

@@ -1,24 +1,23 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
-import Agility from "../Images/Agility.webp"
-import Brute from "../Images/Brute.webp"
-import Counter from "../Images/Counter.webp"
-import Demolition from "../Images/Demolition.webp"
-import Deception from "../Images/Deception.webp"
-import Engineer from "../Images/Engineer.webp"
-import Lockpick from "../Images/Lockpick.webp"
-import Perception from "../Images/Perception.webp"
-import Trap from "../Images/Trap.webp"
-import Bunker from "../Images/Bunker.webp"
-import Lab from "../Images/Lab.webp"
-import Library from "../Images/Library.webp"
-import Mansion from "../Images/Mansion.webp"
-import Records from "../Images/Records.webp"
-import Repository from "../Images/Repository.webp"
-import Smuggler from "../Images/Smuggler.webp"
-import Tunnels from "../Images/Tunnels.webp"
-import Underbelly from "../Images/Underbelly.webp"
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import Agility from "../Images/Jobs/Agility.webp"
+import Brute from "../Images/Jobs/Brute.webp"
+import Counter from "../Images/Jobs/Counter.webp"
+import Demolition from "../Images/Jobs/Demolition.webp"
+import Deception from "../Images/Jobs/Deception.webp"
+import Engineer from "../Images/Jobs/Engineer.webp"
+import Lockpick from "../Images/Jobs/Lockpick.webp"
+import Perception from "../Images/Jobs/Perception.webp"
+import Trap from "../Images/Jobs/Trap.webp"
+import Bunker from "../Images/Layouts/Bunker.webp"
+import Lab from "../Images/Layouts/Lab.webp"
+import Library from "../Images/Layouts/Library.webp"
+import Mansion from "../Images/Layouts/Mansion.webp"
+import Records from "../Images/Layouts/Records.webp"
+import Repository from "../Images/Layouts/Repository.webp"
+import Smuggler from "../Images/Layouts/Smuggler.webp"
+import Tunnels from "../Images/Layouts/Tunnels.webp"
+import Underbelly from "../Images/Layouts/Underbelly.webp"
 
 
 const useStyles = makeStyles(theme => ({

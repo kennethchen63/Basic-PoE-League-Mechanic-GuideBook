@@ -1,24 +1,23 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
-import Gianna from "../Images/Gianna.webp"
-import Huck from "../Images/Huck.webp"
-import Isla from "../Images/Isla.webp"
-import Karst from "../Images/Karst.png"
-import Nenet from "../Images/Nenet.png"
-import Niles from "../Images/Niles.webp"
-import Tibbs from "../Images/Tibbs.webp"
-import Tullina from "../Images/Tullina.png"
-import Vinderi from "../Images/Vinderi.webp"
-import Agility from "../Images/Agility.webp"
-import Brute from "../Images/Brute.webp"
-import Counter from "../Images/Counter.webp"
-import Demolition from "../Images/Demolition.webp"
-import Deception from "../Images/Deception.webp"
-import Engineer from "../Images/Engineer.webp"
-import Lockpick from "../Images/Lockpick.webp"
-import Perception from "../Images/Perception.webp"
-import Trap from "../Images/Trap.webp"
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import Gianna from "../Images/Rogues/Gianna.webp"
+import Huck from "../Images/Rogues/Huck.webp"
+import Isla from "../Images/Rogues/Isla.webp"
+import Karst from "../Images/Rogues/Karst.png"
+import Nenet from "../Images/Rogues/Nenet.png"
+import Niles from "../Images/Rogues/Niles.webp"
+import Tibbs from "../Images/Rogues/Tibbs.webp"
+import Tullina from "../Images/Rogues/Tullina.png"
+import Vinderi from "../Images/Rogues/Vinderi.webp"
+import Agility from "../Images/Jobs/Agility.webp"
+import Brute from "../Images/Jobs/Brute.webp"
+import Counter from "../Images/Jobs/Counter.webp"
+import Demolition from "../Images/Jobs/Demolition.webp"
+import Deception from "../Images/Jobs/Deception.webp"
+import Engineer from "../Images/Jobs/Engineer.webp"
+import Lockpick from "../Images/Jobs/Lockpick.webp"
+import Perception from "../Images/Jobs/Perception.webp"
+import Trap from "../Images/Jobs/Trap.webp"
 
 const useStyles = makeStyles(theme => ({
     bold: {
