@@ -4,6 +4,7 @@ import HeistDesc from "./Components/HeistDesc";
 import RogueTable from "./Components/RogueTable";
 import ContractDesc from "./Components/ContractDesc";
 import ContractTable from "./Components/ContractTable";
+import BlueprintDesc from "./Components/BlueprintDesc";
 import ContractRewards from "./Components/ContractRewards";
 import UniqueContract from "./Components/UniqueContract";
 
@@ -35,6 +36,9 @@ function Heist() {
                         </div>
                         <div>
                             <ContractTable/>
+                        </div>
+                        <div>
+                            <BlueprintDesc/>
                         </div>
                         <div>
                             <ContractRewards/>

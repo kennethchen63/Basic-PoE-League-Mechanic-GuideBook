@@ -11,7 +11,7 @@ function ContractRewards() {
             </Typography>
             <Grid container justifyContent="center">
                 <Typography>
-                   The rewards in contracts are based on the type of skill required in the contract. However, there are also 5 unique contracts with their own unique as rewards.
+                   The rewards in contracts/blueprints are based on the type of skill required in the contract. However, there are also 5 unique contracts with their own unique as rewards.
                 </Typography>
             </Grid>
             <Grid container justifyContent="center">
