@@ -142,39 +142,39 @@ function IncursionTable() {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                {data.map((data) => (
-                    <TableRow>
-                        <TableCell style={{width: '20%'}}> {data.theme} </TableCell>
-                        <TableCell style={{width: '20%'}}> 
+                    {data.map((data) => (
+                        <TableRow>
+                            <TableCell style={{width: '20%'}}> {data.theme} </TableCell>
+                            <TableCell style={{width: '20%'}}> 
                                 {data.details.name.map((name) => (
                                     <TableRow>
-                                        <TableCell>{name}</TableCell>
+                                        <TableCell style={{borderBottom: "none"}}>{name}</TableCell>
                                     </TableRow>
                                 ))} 
-                        </TableCell>
-                        <TableCell style={{width: '20%'}}> 
+                            </TableCell>
+                            <TableCell style={{width: '20%'}}> 
                                 {data.details.tier.map((tier) => (  
                                     <TableRow>
-                                        <TableCell>{tier}</TableCell>
+                                        <TableCell style={{borderBottom: "none"}}>{tier}</TableCell>
                                     </TableRow>
                                 ))}
-                        </TableCell>
-                        <TableCell style={{width: '20%'}}> 
+                            </TableCell>
+                            <TableCell style={{width: '20%'}}> 
                                 {data.details.description.map((description) => (  
                                     <TableRow>
-                                        <TableCell>{description}</TableCell>
+                                        <TableCell style={{borderBottom: "none"}}>{description}</TableCell>
                                     </TableRow>
                                 ))}
-                        </TableCell>
-                        <TableCell style={{width: '20%'}}> 
+                            </TableCell>
+                            <TableCell style={{width: '20%'}}> 
                                 {data.details.modifiers.map((modifiers) => (  
                                     <TableRow>
-                                        <TableCell>{modifiers}</TableCell>
+                                        <TableCell style={{borderBottom: "none"}}>{modifiers}</TableCell>
                                     </TableRow>
                                 ))}
-                        </TableCell>
-                    </TableRow>
-                ))}
+                            </TableCell>
+                        </TableRow>
+                    ))}
                 </TableBody>
             </Table>
         </TableContainer>
