@@ -40,17 +40,17 @@ function Clusters() {
             </Grid>
             <Grid container justifyContent='space-around'>
                 <Typography variant="h5">
-                    <a href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Small+Cluster+Jewel'>
+                    <a target="_blank" rel="noopener noreferrer" href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Small+Cluster+Jewel'>
                         Small Cluster Jewels
                     </a>
                 </Typography>
                 <Typography variant="h5">
-                    <a href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Medium+Cluster+Jewel'>
+                    <a target="_blank" rel="noopener noreferrer" href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Medium+Cluster+Jewel'>
                         Medium Cluster Jewels
                     </a>
                 </Typography>
                 <Typography variant="h5">
-                    <a href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Large+Cluster+Jewel'>
+                    <a target="_blank" rel="noopener noreferrer" href='https://poedb.tw/us/mod.php?cn=BaseItemTypes&an=Large+Cluster+Jewel'>
                         Large Cluster Jewels
                     </a>
                 </Typography>
