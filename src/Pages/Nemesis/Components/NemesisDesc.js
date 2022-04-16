@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography } from "@material-ui/core";
 
-function NemesisDescPic() {
+function NemesisDesc() {
 
     return(
         <Grid container justifyContent="center">
@@ -38,4 +38,4 @@ function NemesisDescPic() {
 }
 
 
-export default NemesisDescPic;
+export default NemesisDesc;

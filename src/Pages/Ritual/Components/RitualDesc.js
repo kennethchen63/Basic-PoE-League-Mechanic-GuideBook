@@ -5,12 +5,12 @@ import Ritual from "../../../images/Ritual.JPG"
 function RitualDesc() {
 
     return (
-        <Grid>
-            <Typography align="center" variant="h2">
+        <Grid container justifyContent="center">
+            <Typography variant="h2">
                 Ritual
             </Typography>
             <Grid container justifyContent="center">
-                <Box component="img" src={`${Ritual}`} align="center"/>
+                <Box component="img" src={`${Ritual}`}/>
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>

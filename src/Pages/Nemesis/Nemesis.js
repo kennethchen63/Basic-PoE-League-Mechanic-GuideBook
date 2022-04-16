@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, makeStyles } from "@material-ui/core";
-import NemesisDescPic from "./Components/NemesisDescPic";
+import NemesisDesc from "./Components/NemesisDesc";
 import NemesisTable from "./Components/NemesisTable";
 
 const useStyles = makeStyles(theme => ({
@@ -21,7 +21,7 @@ function Nemesis() {
                 <Grid item xs={12}>
                     <Box className={classes.l_desc}>
                         <div>
-                            <NemesisDescPic/>
+                            <NemesisDesc/>
                         </div>
                         <div>
                             <NemesisTable/>
