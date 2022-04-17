@@ -50,7 +50,7 @@ const data = [
         skills: ["Demolition"], icons: [Demolition]},
     { type: "Random", drops: "Random items from other reward chests.	", 
         skills: ["Demolition", "Engineering", "Perception"], icons: [Demolition, Engineer, Perception]},
-    { type: "Talismans", drops: "Talismans with Annoints", 
+    { type: "Talismans", drops: "Talismans with Anoints", 
         skills: ["Trap Disarmament"], icons: [Trap]},
     { type: "Uniques", drops: "Unique items, Reliquary Scarabs.", 
         skills: ["Brute Force", "Engineering"], icons: [Brute, Engineer]},
