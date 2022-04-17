@@ -1,10 +1,13 @@
 import React from "react";
-import { Grid, Box, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Box, makeStyles } from "@material-ui/core";
+import BestiaryDesc from "./Components/BestiaryDesc";
+import BeastCrafting from "./Components/BeastCrafting";
+import BeastTypes from "./Components/BeastTypes";
 
 const useStyles = makeStyles(theme => ({
     l_desc: {
         width: '100%',
-        height: 950, 
+        height: "100%", 
         backgroundColor: 'gray', 
     },
 }));
@@ -18,9 +21,15 @@ function Bestiary() {
             <Grid container>
                 <Grid item xs={12}>
                     <Box className={classes.l_desc}>
-                        <Typography align="center" variant="h2">
-                            Bestiary
-                        </Typography>
+                        <div>
+                            <BestiaryDesc/>
+                        </div>
+                        <div>
+                            <BeastTypes/>
+                        </div>
+                        <div>
+                            <BeastCrafting/>
+                        </div>
                     </Box>
                 </Grid>
             </Grid>
