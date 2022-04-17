@@ -3,7 +3,7 @@ import { List, ListItem, Typography, Divider, Box, makeStyles } from "@material-
 
 const useStyles = makeStyles(theme => ({
     ring_box: {
-        backgroundColor: 'purple',
+        backgroundColor: 'brown',
     },
 }));
 
