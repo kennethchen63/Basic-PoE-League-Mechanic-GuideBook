@@ -4,7 +4,7 @@ import TormentTable from "./Components/TormentTable";
 import TormentDescPic from "./Components/TormentDesc";
 
 const useStyles = makeStyles(theme => ({
-    l_desc: {
+    box: {
         width: '100%',
         height: "100%", 
         backgroundColor: 'gray', 
@@ -19,7 +19,7 @@ function Torment() {
     return (   
         <Grid container>
             <Grid container xs={12}>
-                <Box className={classes.l_desc}>
+                <Box className={classes.box}>
                     <div>
                         <TormentDescPic/>
                     </div>

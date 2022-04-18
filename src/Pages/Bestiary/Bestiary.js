@@ -5,7 +5,7 @@ import BeastCrafting from "./Components/BeastCrafting";
 import BeastTypes from "./Components/BeastTypes";
 
 const useStyles = makeStyles(theme => ({
-    l_desc: {
+    box: {
         width: '100%',
         height: "100%", 
         backgroundColor: 'gray', 
@@ -20,7 +20,7 @@ function Bestiary() {
         <div>
             <Grid container>
                 <Grid item xs={12}>
-                    <Box className={classes.l_desc}>
+                    <Box className={classes.box}>
                         <div>
                             <BestiaryDesc/>
                         </div>

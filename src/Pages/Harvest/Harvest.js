@@ -4,7 +4,7 @@ import HarvestDesc from "./Components/HarvestDesc";
 import HarvestTable from "./Components/HarvestTable";
 
 const useStyles = makeStyles(theme => ({
-    l_desc: {
+    box: {
         width: '100%',
         height: "100%", 
         backgroundColor: 'gray', 
@@ -19,7 +19,7 @@ function Harvest() {
         <div>
             <Grid container>
                 <Grid item xs={12}>
-                    <Box className={classes.l_desc}>
+                    <Box className={classes.box}>
                         <div>
                             <HarvestDesc/>
                         </div>

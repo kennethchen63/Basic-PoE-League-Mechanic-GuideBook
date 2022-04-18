@@ -7,7 +7,7 @@ import LegionJewelsTable from "./Components/LegionJewelsTable";
 import LegionJewels from "./Components/LegionJewels";
 
 const useStyles = makeStyles(theme => ({
-    l_desc: {
+    box: {
         width: '100%',
         height: "100%",
         backgroundColor: 'gray', 
@@ -22,7 +22,7 @@ function Legion() {
         <div>
             <Grid container>
                 <Grid item xs={12}>
-                    <Box className={classes.l_desc}>
+                    <Box className={classes.box}>
                         <div>
                             <LegionDesc/>
                         </div>

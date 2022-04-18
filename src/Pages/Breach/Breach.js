@@ -4,7 +4,7 @@ import BreachDesc from "./Componets/BreachDesc";
 import BreachTable from "./Componets/BreachTable";
            
 const useStyles = makeStyles(theme => ({
-    l_desc: {
+    box: {
         width: '100%',
         height: "100%", 
         backgroundColor: 'gray', 
@@ -19,7 +19,7 @@ function Breach() {
         <div>
             <Grid container>
                 <Grid item xs={12}>
-                    <Box className={classes.l_desc}>
+                    <Box className={classes.box}>
                         <div>
                             <BreachDesc/>
                         </div>
