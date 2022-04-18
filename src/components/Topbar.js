@@ -57,7 +57,7 @@ function Topbar() {
                     </ul>
 
                     <Link to = '/' className = "topbar-logo">
-                        Path of Exile Leagues 
+                        Basic Path of Exile League Mechanic Guide Book
                     </Link>
                     
                 </div>
