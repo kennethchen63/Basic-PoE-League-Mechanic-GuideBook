@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Topbar from './components/Topbar';
-import Home from './Pages/Other/Home'
+import Topbar from './Components/Topbar';
+import Home from './Pages/Home/Home';
 import Ambush from './Pages/Ambush/Ambush'
 import Abyss from './Pages/Abyss/Abyss';
 import Bestiary from './Pages/Bestiary/Bestiary';
@@ -24,14 +24,28 @@ import Nemesis from './Pages/Nemesis/Nemesis';
 import Ritual from './Pages/Ritual/Ritual';
 import Synthesis from './Pages/Synthesis/Synthesis';
 import Torment from './Pages/Torment/Torment';
-import ErrorPage from './Pages/Other/ErrorPage';
+import Error from './Pages/Error/Error';
+import { createTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
 
-const App = () => {
+const theme = createTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#424242',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+  },
+});
+
+function App() {
 
     return (
-        <BrowserRouter>
-            <Topbar/>
-            <div>
+        <ThemeProvider theme={theme}>
+          <CssBaseline>
+            <BrowserRouter>
+                <Topbar/>
                 <Routes>
                     <Route exact path="/" element={<Home/> }/>
                     <Route exact path="/Abyss" element={<Abyss/> }/>
@@ -56,10 +70,11 @@ const App = () => {
                     <Route exact path="/Ritual" element={<Ritual/> }/>
                     <Route exact path="/Synthesis" element={<Synthesis/> }/>
                     <Route exact path="/Torment" element={<Torment/> }/>
-                    <Route path='*' element={<ErrorPage/>}/>
+                    <Route path='*' element={<Error/>}/>
                 </Routes>
-            </div>      
-        </BrowserRouter>
+            </BrowserRouter>
+            </CssBaseline>
+        </ThemeProvider>
     )
 }
 
