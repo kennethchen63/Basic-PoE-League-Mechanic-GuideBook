@@ -46,7 +46,7 @@ function BiomeTable() {
                     The Delve mine itself has several different biomes, with their associated fossil rewards. Some of these biomes contain their own bosses with unique rewards.
                 </Typography>
             </Grid>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

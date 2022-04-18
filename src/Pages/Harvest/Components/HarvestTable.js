@@ -67,7 +67,7 @@ function HarvestTable() {
             <Typography variant="h2">
                 Seeds
             </Typography>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

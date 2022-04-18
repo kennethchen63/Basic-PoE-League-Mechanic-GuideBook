@@ -74,7 +74,7 @@ function FossilTable() {
                     Delve's main rewards are fossils and resonators. They are used together to craft items with special restrictions.
                 </Typography>
             </Grid>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

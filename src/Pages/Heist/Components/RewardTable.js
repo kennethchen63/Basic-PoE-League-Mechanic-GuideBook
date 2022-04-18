@@ -68,7 +68,7 @@ function RewardTable() {
             <Typography variant="h2">
                 Rogues
             </Typography>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

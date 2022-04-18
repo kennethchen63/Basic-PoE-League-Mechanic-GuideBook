@@ -33,7 +33,7 @@ function ResonatorTable() {
                     The Resonator socket count is how many fossils you can put inside them to craft with. Once the fossils are socketed in, they cannot be removed.
                 </Typography>
             </Grid>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

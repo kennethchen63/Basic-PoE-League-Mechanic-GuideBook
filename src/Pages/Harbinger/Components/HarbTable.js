@@ -66,7 +66,7 @@ function HarbTable() {
             <Typography variant="h2">
                 Harbinger Items
             </Typography>
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>

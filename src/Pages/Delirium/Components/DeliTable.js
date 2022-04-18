@@ -21,7 +21,7 @@ function DeliTable() {
 
     return(
         <Grid container justifyContent="center">
-            <TableContainer style={{ backgroundColor: "white"}}component={Paper}>
+             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
                         <TableRow>
