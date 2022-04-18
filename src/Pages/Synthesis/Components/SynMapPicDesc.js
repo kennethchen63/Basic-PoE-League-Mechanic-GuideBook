@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box, makeStyles } from "@material-ui/core";
 import Altered from "../images/Altered.JPG"
 import Augmented from "../images/Augmented.JPG"
 import Cortex from "../images/Cortex.JPG"
@@ -7,9 +7,17 @@ import Replica_Cortex from "../images/Replica_Cortex.JPG"
 import Rewritten from "../images/Rewritten.JPG"
 import Twisted from "../images/Twisted.JPG"
 
+const useStyles = makeStyles(theme => ({
+    cursor: {
+        cursor: "pointer",
+    },
+}));
+
 function SynMapPicDesc() {
 
     const [cortex, setCortex] = useState(false);
+
+    const classes = useStyles();
 
     return (
         <Grid container justifyContent="space-around">
@@ -50,6 +58,7 @@ function SynMapPicDesc() {
                             maxHeight={375}  // 442
                             onClick={() => setCortex(prevMode => !prevMode)}
                             src={cortex ? `${Cortex}` : `${Replica_Cortex}`}
+                            className={classes.cursor}
                         />
                 </Grid>
             </Grid>
