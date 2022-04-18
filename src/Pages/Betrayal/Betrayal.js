@@ -1,10 +1,11 @@
 import React from "react";
-import { Grid, Box, makeStyles } from "@material-ui/core";
+import { Grid, Box } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import BetrayalDesc from "./Components/BetrayalDesc";
 import BoardDesc from "./Components/BoardDesc";
 import SafehouseDesc from "./Components/SafehouseDesc";
 import SafehouseTable from "./Components/SafehouseTable";
-     
+
 const useStyles = makeStyles(theme => ({
     box: {
         width: '100%',

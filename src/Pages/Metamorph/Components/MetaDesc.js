@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Meta from "../../../images/Metamorph.png"
 import MetaUI from "../Images/MetaUI.png"
 

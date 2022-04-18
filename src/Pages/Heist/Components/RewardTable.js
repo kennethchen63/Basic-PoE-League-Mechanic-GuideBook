@@ -1,5 +1,17 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, Grid, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Box,
+    Grid,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Agility from "../Images/Jobs/Agility.webp"
 import Brute from "../Images/Jobs/Brute.webp"
 import Counter from "../Images/Jobs/Counter.webp"

@@ -1,9 +1,10 @@
 import React from "react";
-import { Grid, Box, makeStyles } from "@material-ui/core";
+import { Grid, Box } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import DelDesc from "./Components/DelDesc";
 import DeliRewards from "./Components/DelRewards";
 import Simulacrum from "./Components/Simulacrum";
- 
+
 const useStyles = makeStyles(theme => ({
     box: {
         width: '100%',

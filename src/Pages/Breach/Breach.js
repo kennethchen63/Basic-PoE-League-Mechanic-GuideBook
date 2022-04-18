@@ -1,8 +1,9 @@
 import React from "react";
-import { Grid, Box, makeStyles } from "@material-ui/core";
+import { Grid, Box } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import BreachDesc from "./Componets/BreachDesc";
 import BreachTable from "./Componets/BreachTable";
-           
+
 const useStyles = makeStyles(theme => ({
     box: {
         width: '100%',

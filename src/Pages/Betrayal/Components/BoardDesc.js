@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Board from "../Images/SyndicateBoard.jpg"
 import Interrogate from './Interrogate';
 import RightOption from './RightOption';

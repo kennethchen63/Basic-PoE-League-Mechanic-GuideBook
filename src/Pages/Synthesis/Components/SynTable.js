@@ -1,5 +1,7 @@
 import React from "react";
-import { List, ListItem, Typography, Divider, Box, makeStyles } from "@material-ui/core";
+import { List, ListItem, Typography, Divider, Box } from "@mui/material";
+
+import makeStyles from '@mui/styles/makeStyles';
 
 const useStyles = makeStyles(theme => ({
     ring_box: {

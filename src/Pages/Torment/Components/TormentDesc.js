@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Box } from "@material-ui/core";
+import { Typography, Grid, Box } from "@mui/material";
 import Tormentpic from '../../../images/Torment.png';
 
 function TormentDescPic() {

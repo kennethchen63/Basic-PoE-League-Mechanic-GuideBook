@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Harvest from "../../../images/Harvest.png";
 import SacredGrove from "../Images/SacredGrove.webp";
 import Patches from "../Images/Patches.png";

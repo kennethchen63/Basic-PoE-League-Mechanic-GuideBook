@@ -1,5 +1,17 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Grid,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Mines from "../Images/Biomes/Mines.webp";
 import Fungal from "../Images/Biomes/Fungal.webp";
 import Petrified from "../Images/Biomes/Petrified.webp";

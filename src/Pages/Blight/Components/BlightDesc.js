@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Blight from "../../../images/Blight.png"
 import Encounter from "../Images/Encounter.jpg"
 

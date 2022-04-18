@@ -1,5 +1,17 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid,Box, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Grid,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Dannig from "../Images/Dannig.webp"
 import LessSun from "../Images/Artifacts/LessSun.webp"
 import GreatSun from "../Images/Artifacts/GreatSun.webp"

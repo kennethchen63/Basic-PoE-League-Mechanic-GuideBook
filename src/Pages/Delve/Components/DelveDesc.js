@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Delve from "../../../images/Delve.jpg";
 import DelveUI from "../Images/DelveUI.jpg";
 import FracturedWall from "../Images/FracturedWall.jpg";

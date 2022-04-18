@@ -25,11 +25,17 @@ import Ritual from './Pages/Ritual/Ritual';
 import Synthesis from './Pages/Synthesis/Synthesis';
 import Torment from './Pages/Torment/Torment';
 import Error from './Pages/Error/Error';
-import { createTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
+import {
+  createTheme,
+  ThemeProvider,
+  StyledEngineProvider,
+  CssBaseline,
+  adaptV4Theme,
+} from '@mui/material';
 
-const theme = createTheme({
+const theme = createTheme(adaptV4Theme({
   palette: {
-    type: 'dark',
+    mode: 'dark',
     primary: {
       main: '#424242',
     },
@@ -37,11 +43,12 @@ const theme = createTheme({
       main: '#f50057',
     },
   },
-});
+}));
 
 function App() {
 
     return (
+      <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme}>
           <CssBaseline>
             <BrowserRouter>
@@ -75,7 +82,8 @@ function App() {
             </BrowserRouter>
             </CssBaseline>
         </ThemeProvider>
-    )
+      </StyledEngineProvider>
+    );
 }
 
 export default App;

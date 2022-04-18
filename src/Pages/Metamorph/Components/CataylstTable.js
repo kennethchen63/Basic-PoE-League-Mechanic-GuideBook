@@ -1,5 +1,16 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Abrasive from "../Images/Abrasive.webp"
 import Accelerating from "../Images/Accelerating.webp"
 import Fertile from "../Images/Fertile.webp"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Essence from "../../../images/Essence.JPG";
 import EssencePack from "../Images/EssencePack.JPG"
 

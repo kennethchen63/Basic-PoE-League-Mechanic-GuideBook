@@ -1,5 +1,16 @@
 import React from 'react'
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles } from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Abyss from "../Images/Rewards/Abyss.webp";
 import Armour from "../Images/Rewards/Armour.webp";
 import Blight from "../Images/Rewards/Blight.webp";

@@ -1,5 +1,16 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Gianna from "../Images/Rogues/Gianna.webp"
 import Huck from "../Images/Rogues/Huck.webp"
 import Isla from "../Images/Rogues/Isla.webp"

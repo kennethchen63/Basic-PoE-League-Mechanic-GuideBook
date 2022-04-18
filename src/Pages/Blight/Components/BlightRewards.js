@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import RewardTable from './RewardTable';
 import OilTable from './OilTable';
 import Anoint from "../Images/Oils/Anoint.webp"

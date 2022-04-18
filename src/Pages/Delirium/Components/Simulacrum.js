@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import SimStart from "../Images/SimStart.webp"
 import Omniphobia from "../Images/Omniphobia.png"
 import Kosis from "../Images/Kosis.webp"

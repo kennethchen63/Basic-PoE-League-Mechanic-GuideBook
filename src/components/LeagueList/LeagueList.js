@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Box, List, Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { Box, List, Grid } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import LeagueListItemButton from "../LeagueListItemButton/LeagueListItemButton";
 
 const useStyles = makeStyles(theme => ({

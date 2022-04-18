@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography } from "@material-ui/core";
+import { Grid, Box, Typography } from "@mui/material";
 import RitualAltar from "../Images/RitualAltar.webp";
 import FavourInterface from "../Images/FavourInterface.webp"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';

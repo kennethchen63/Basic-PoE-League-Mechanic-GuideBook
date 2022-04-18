@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import ContractUI from "../Images/ContractUI.JPG"
 import RogueMarker from "../Images/RogueMarker.JPG"
 import Contractpic from "../Images/Contract.JPG"

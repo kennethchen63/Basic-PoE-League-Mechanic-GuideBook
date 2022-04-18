@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Typography, Box, makeStyles } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import Incursion from "../../../images/Incursion.jpg"
 import AlvaIncursion from "../Images/AlvaIncursion.JPG"
 import Stone from "../Images/Stone.JPG"

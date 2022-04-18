@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Ritual from "../../../images/Ritual.JPG"
 
 function RitualDesc() {

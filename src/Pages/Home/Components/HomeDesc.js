@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Button, Box, } from "@material-ui/core";
+import { Grid, Typography, Button, Box, } from "@mui/material";
 import PoE from "../Images/PoE.png"
 
 const leagues = [
@@ -28,7 +28,7 @@ const leagues = [
 
 function HomeDesc() {
 
-    return(
+    return (
         <Grid container justifyContent="center">
             <Typography align="center" variant="h2" >
                 Welcome to the Basic Guide Book for Path of Exile Leagues Mechanics you can find throughout your playthrough!
@@ -46,7 +46,7 @@ function HomeDesc() {
                     Here are the different league mechanics available in the current Path of Exile patch.
                 </Typography>
             </Grid>
-            <Grid container justify='space-evenly'>
+            <Grid container justifyContent='space-evenly'>
                     {leagues.map((leagues) => (
                         <Box sx={{m: 2}}>
                             <Button 
@@ -63,7 +63,7 @@ function HomeDesc() {
                     ))}
             </Grid>
         </Grid>
-    )
+    );
 }
 
 export default HomeDesc;

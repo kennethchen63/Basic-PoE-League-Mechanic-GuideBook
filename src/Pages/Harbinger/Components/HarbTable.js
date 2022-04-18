@@ -1,5 +1,17 @@
 import React from "react";
-import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid,Box, makeStyles} from "@material-ui/core";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableRow,
+    TableCell,
+    TableBody,
+    Typography,
+    Paper,
+    Grid,
+    Box,
+} from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
 import fBrutal from "../Images/Parts/fBrutal.webp"
 import sBrutal from "../Images/Parts/sBrutal.webp"
 import tBrutal from "../Images/Parts/tBrutal.webp"

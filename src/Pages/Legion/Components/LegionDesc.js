@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box } from "@material-ui/core";
+import { Grid, Typography, Box } from "@mui/material";
 import Legion from "../../../images/Legion.png"
 import Activate from "../Images/Activate.jpg"
 import Monolith from "../Images/Monolith.png"
