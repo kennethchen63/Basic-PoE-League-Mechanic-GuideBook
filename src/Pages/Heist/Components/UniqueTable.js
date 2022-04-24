@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Apex from "../Images/Uniques/Apex.JPG"
 import Brute from "../Images/Jobs/Brute.webp"
 import Counter from "../Images/Jobs/Counter.webp"

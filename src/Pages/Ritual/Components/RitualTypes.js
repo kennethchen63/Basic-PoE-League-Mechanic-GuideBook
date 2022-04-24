@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import RitualTypeTable from "./RitualTypeTable";
 
 const useStyles = makeStyles(theme => ({

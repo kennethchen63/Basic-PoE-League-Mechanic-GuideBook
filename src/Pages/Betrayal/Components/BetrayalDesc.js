@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Box } from "@mui/material";
-import Betrayal from "../../../images/Betrayal.png"
+import Betrayal from "../../../LeagueLogos/Betrayal.png"
 
 function BetrayalDesc() {
     return(

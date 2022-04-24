@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Essence from "../../../images/Essence.JPG";
+import Essence from "../../../LeagueLogos/Essence.JPG";
 import EssencePack from "../Images/EssencePack.JPG"
 
 function EssenceDesc() {

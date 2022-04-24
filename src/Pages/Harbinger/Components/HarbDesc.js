@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Box } from "@mui/material";
-import Harbinger from "../../../images/Harbinger.jpg";
+import Harbinger from "../../../LeagueLogos/Harbinger.jpg";
 
 function HarbDesc() {
 

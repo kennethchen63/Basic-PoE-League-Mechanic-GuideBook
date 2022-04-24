@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
-import Tormentpic from '../../../images/Torment.png';
+import Torment from '../../../LeagueLogos/Torment.png';
 
 function TormentDescPic() {
 
@@ -10,7 +10,7 @@ function TormentDescPic() {
                 Torment
             </Typography>
             <Grid container justifyContent="center">
-                <Box component="img" src={`${Tormentpic}`}/>
+                <Box component="img" src={`${Torment}`}/>
             </Grid>
             <Grid container justifyContent="center">
                 <Typography>

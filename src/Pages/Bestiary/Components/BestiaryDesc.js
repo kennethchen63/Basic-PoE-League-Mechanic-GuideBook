@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Box } from "@mui/material";
-import Bestiary from "../../../images/Bestiary.webp";
+import Bestiary from "../../../LeagueLogos/Bestiary.webp";
 import BestiaryTab from "../Images/BestiaryTab.jpg";
 
 function BestiaryDesc() {

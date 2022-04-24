@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import RitualDesc from "./Components/RitualDesc";
 import RitualImagesCap from "./Components/RitualImagesCap";
 import Tribute from "./Components/Tribute";

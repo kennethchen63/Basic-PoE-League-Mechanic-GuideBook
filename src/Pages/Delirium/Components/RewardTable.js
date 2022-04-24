@@ -11,7 +11,7 @@ import {
     Grid,
     Box,
 } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import Abyss from "../Images/Rewards/Abyss.webp"
 import Armour from "../Images/Rewards/Armour.webp"
 import Blight from "../Images/Rewards/Blight.webp"

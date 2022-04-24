@@ -1,16 +1,6 @@
 import React from 'react';
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import SaqawineRhoa from "../Images/Beasts/SaqawineRhoa.png";
 import CraicicShieldCrab from "../Images/Beasts/CraicicShieldCrab.png";
 import CraicicSandSpitter from "../Images/Beasts/CraicicSandSpitter.png";

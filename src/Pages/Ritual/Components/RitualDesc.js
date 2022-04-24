@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Ritual from "../../../images/Ritual.JPG"
+import Ritual from "../../../LeagueLogos/Ritual.JPG"
 
 function RitualDesc() {
 

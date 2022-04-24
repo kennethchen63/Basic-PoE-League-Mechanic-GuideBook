@@ -1,18 +1,6 @@
 import React from "react";
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Paper,
-    Typography,
-    Box,
-    List,
-    ListItem,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Paper, Typography, Box, List, ListItem } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Apocalyptic from "../Images/Apocalyptic.webp";
 import Bitter from "../Images/Bitter.webp";
 import Charged from "../Images/Charged.webp";
@@ -33,8 +21,6 @@ import Suppressive from "../Images/Suppressive.webp";
 import Vaal from "../Images/Vaal.webp";
 import Violent from "../Images/Violent.webp";
 import Volatile from "../Images/Volatile.webp";
-
-
 
 const useStyles = makeStyles(theme => ({
     bold: {

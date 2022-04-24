@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid } from '@mui/material';
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import HomeDesc from "./Components/HomeDesc";
 
 const useStyles = makeStyles(theme => ({

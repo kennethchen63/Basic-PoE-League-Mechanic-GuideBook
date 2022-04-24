@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Box } from "@mui/material";
-import Abyss from "../../../images/Abyss.jpg"
+import Abyss from "../../../LeagueLogos/Abyss.jpg"
 
 function AbyssDesc() {
 

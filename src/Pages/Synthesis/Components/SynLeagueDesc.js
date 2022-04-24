@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
-import Syn from "../../../images/Synthesis.webp"
+import Syn from "../../../LeagueLogos/Synthesis.webp"
 
 function SynLeagueDesc() {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import IncursionDesc from "./Components/IncursionDesc";
 import IncursionRoom from "./Components/IncursionRoom";
 import IncursionTable from "./Components/IncursionTable";

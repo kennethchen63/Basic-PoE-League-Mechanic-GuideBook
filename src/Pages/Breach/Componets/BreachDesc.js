@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Box } from "@mui/material";
-import Breach from "../../../images/Breach.JPG";
+import Breach from "../../../LeagueLogos/Breach.JPG";
 
 function BreachDesc() {
 

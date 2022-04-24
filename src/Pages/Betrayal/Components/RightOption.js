@@ -1,7 +1,6 @@
 import React from 'react'
 import { Grid, List, ListItem, Typography, Box } from "@mui/material";
-
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
     box: {
@@ -17,7 +16,6 @@ const betray = [
     {outcome: "Destroy all items on members of another division"},
     {outcome: "Raise rank of all members of their division and lower rank of another"},
 ]
-
 
 const baragain = [
     {outcome: "Gain Intelligence on a division"},

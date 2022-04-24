@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Clear from "../Images/Oils/Clear.webp";
 import Sepia from "../Images/Oils/Sepia.webp";
 import Amber from "../Images/Oils/Amber.webp";

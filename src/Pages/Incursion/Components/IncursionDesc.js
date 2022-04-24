@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
-import Incursion from "../../../images/Incursion.jpg"
+import {makeStyles} from '@mui/styles';
+import Incursion from "../../../LeagueLogos/Incursion.jpg"
 import AlvaIncursion from "../Images/AlvaIncursion.JPG"
 import Stone from "../Images/Stone.JPG"
 

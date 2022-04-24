@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Box } from "@mui/material";
-import Delirium from "../../../images/Delirium.webp";
+import Delirium from "../../../LeagueLogos/Delirium.webp";
 import Mirror from "../Images/Mirror.webp";
 import Encounter from "../Images/Encounter.webp";
 import DeliTable from './DeliTable';

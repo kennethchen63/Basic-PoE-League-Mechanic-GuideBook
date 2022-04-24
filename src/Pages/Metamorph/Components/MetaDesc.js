@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Meta from "../../../images/Metamorph.png"
+import Meta from "../../../LeagueLogos/Metamorph.png"
 import MetaUI from "../Images/MetaUI.png"
 
 function MetaDesc() {

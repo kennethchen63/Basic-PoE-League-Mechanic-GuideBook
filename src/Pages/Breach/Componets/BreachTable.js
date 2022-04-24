@@ -1,17 +1,6 @@
 import React from "react";
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Grid,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import eSplinter from "../Images/Esh/eSplinter.webp";
 import eBase from "../Images/Esh/eBase.webp";
 import eCharged from "../Images/Esh/eCharged.webp";

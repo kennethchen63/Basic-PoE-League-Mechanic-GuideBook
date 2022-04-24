@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import React from "react";
 
 const useStyles = makeStyles(theme => ({

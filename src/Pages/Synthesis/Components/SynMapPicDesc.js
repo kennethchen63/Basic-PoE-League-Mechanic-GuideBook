@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import Altered from "../images/Altered.JPG"
 import Augmented from "../images/Augmented.JPG"
 import Cortex from "../images/Cortex.JPG"

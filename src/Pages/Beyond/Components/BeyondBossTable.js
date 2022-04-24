@@ -1,16 +1,6 @@
 import React from "react";
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Naem from "../Images/Naem.webp";
 import Haast from "../Images/Haast.webp";
 import Tzteosh from "../Images/Tzteosh.webp";

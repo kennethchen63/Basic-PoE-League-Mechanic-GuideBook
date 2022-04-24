@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Heist from "../../../images/Heist.png"
+import Heist from "../../../LeagueLogos/Heist.png"
 
 function HeistDesc() {
 

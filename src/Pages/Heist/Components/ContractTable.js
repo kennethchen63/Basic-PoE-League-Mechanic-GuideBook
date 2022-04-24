@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Agility from "../Images/Jobs/Agility.webp"
 import Brute from "../Images/Jobs/Brute.webp"
 import Counter from "../Images/Jobs/Counter.webp"
@@ -29,7 +19,6 @@ import Repository from "../Images/Layouts/Repository.webp"
 import Smuggler from "../Images/Layouts/Smuggler.webp"
 import Tunnels from "../Images/Layouts/Tunnels.webp"
 import Underbelly from "../Images/Layouts/Underbelly.webp"
-
 
 const useStyles = makeStyles(theme => ({
     bold: {

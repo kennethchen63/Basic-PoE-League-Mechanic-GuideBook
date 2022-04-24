@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import Expedition from "../../../images/Expedition.jpg";
+import Expedition from "../../../LeagueLogos/Expedition.jpg";
 import Excavation from "../Images/Excavation.png";
 
 function ExpDesc() {

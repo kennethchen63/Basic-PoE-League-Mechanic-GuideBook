@@ -1,17 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Grid,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Primitive from "../Images/Resonators/Primitive.webp";
 import Potent from "../Images/Resonators/Potent.png";
 import Powerful from "../Images/Resonators/Powerful.webp";

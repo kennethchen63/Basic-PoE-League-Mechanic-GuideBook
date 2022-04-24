@@ -1,16 +1,6 @@
 import React from "react";
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    Typography,
-    TableBody,
-    Paper,
-} from "@mui/material";
-
-import makeStyles from '@mui/styles/makeStyles';
+import {TableContainer, Table, TableHead, TableRow, TableCell, Typography, TableBody, Paper} from "@mui/material";
+import {makeStyles} from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
     bold: {
@@ -53,7 +43,7 @@ function TormentTable() {
     const classes = useStyles();
 
     return (
-        <TableContainer style={{backgroundColor: "white"}}component={Paper}>
+        <TableContainer component={Paper}>
             <Table>
                 <TableHead>
                     <TableRow>

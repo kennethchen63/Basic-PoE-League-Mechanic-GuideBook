@@ -1,17 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Grid,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Mines from "../Images/Biomes/Mines.webp";
 import Fungal from "../Images/Biomes/Fungal.webp";
 import Petrified from "../Images/Biomes/Petrified.webp";
@@ -22,7 +11,6 @@ import SulphurVents from "../Images/Biomes/SulphurVents.webp";
 import VaalCity from "../Images/Biomes/VaalCity.webp";
 import AbyssCity from "../Images/Biomes/AbyssCity.webp";
 import Primeval from "../Images/Biomes/Primeval.JPG";
-
 
 const useStyles = makeStyles(theme => ({
     bold: {

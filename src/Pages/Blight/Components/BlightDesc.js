@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Box } from "@mui/material";
-import Blight from "../../../images/Blight.png"
+import Blight from "../../../LeagueLogos/Blight.png"
 import Encounter from "../Images/Encounter.jpg"
 
 function BlightDesc() {

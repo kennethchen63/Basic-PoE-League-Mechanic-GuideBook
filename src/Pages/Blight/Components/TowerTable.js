@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Chilling from "../Images/Towers/Chilling.webp";
 import Freezebolt from "../Images/Towers/Freezebolt.webp";
 import GlacialCage from "../Images/Towers/GlacialCage.webp";

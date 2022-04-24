@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Aisling from "../Images/Aisling.webp";
 import Cameria from "../Images/Cameria.webp";
 import Elreon from "../Images/Elreon.webp";
@@ -29,7 +19,6 @@ import Tora from "../Images/Tora.webp";
 import Vagan from "../Images/Vagan.webp";
 import Vorici from "../Images/Vorici.webp";
 import Catarina from "../Images/Catarina.webp";
-
 
 const useStyles = makeStyles(theme => ({
     bold: {

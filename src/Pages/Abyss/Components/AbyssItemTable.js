@@ -1,16 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Box} from "@mui/material";
+import {makeStyles} from '@mui/styles/';
 import Ghastly from "../Images/Ghastly.webp";
 import Hypnotic from "../Images/Hypnotic.webp";
 import Murderous from "../Images/Murderous.webp";

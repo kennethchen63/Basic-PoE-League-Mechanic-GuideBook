@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Box } from "@mui/material";
-import Harvest from "../../../images/Harvest.png";
+import Harvest from "../../../LeagueLogos/Harvest.png";
 import SacredGrove from "../Images/SacredGrove.webp";
 import Patches from "../Images/Patches.png";
 import Crafting from "../Images/Crafting.png";

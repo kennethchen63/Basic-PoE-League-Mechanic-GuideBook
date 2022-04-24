@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import {makeStyles} from '@mui/styles';
 import BloodlinesDesc from "./Components/BloodlinesDesc";
 import BloodlineTable from "./Components/BloodlineTable";
 

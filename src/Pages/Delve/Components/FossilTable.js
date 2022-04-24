@@ -1,17 +1,6 @@
 import React from 'react'
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Grid,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Aberrant from "../Images/Fossils/Aberrant.webp";
 import Aetheric from "../Images/Fossils/Aetheric.webp";
 import Bloodstained from "../Images/Fossils/Bloodstained.webp";

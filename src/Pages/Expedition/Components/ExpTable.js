@@ -1,17 +1,6 @@
 import React from "react";
-import {
-    TableContainer,
-    Table,
-    TableHead,
-    TableRow,
-    TableCell,
-    TableBody,
-    Typography,
-    Paper,
-    Grid,
-    Box,
-} from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
+import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Typography, Paper, Grid, Box } from "@mui/material";
+import {makeStyles} from '@mui/styles';
 import Dannig from "../Images/Dannig.webp"
 import LessSun from "../Images/Artifacts/LessSun.webp"
 import GreatSun from "../Images/Artifacts/GreatSun.webp"
