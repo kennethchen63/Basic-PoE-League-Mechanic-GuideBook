@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Topbar from './Components/Topbar';
 import Home from './Pages/Home/Home';
 import Ambush from './Pages/Ambush/Ambush'
 import Abyss from './Pages/Abyss/Abyss';
@@ -25,13 +24,8 @@ import Ritual from './Pages/Ritual/Ritual';
 import Synthesis from './Pages/Synthesis/Synthesis';
 import Torment from './Pages/Torment/Torment';
 import Error from './Pages/Error/Error';
-import {
-  createTheme,
-  ThemeProvider,
-  StyledEngineProvider,
-  CssBaseline,
-  adaptV4Theme,
-} from '@mui/material';
+import { createTheme, ThemeProvider, StyledEngineProvider, CssBaseline, adaptV4Theme, } from '@mui/material';
+import NavBar from './Components/NavBar/NavBar';
 
 const theme = createTheme(adaptV4Theme({
   palette: {
@@ -48,41 +42,41 @@ const theme = createTheme(adaptV4Theme({
 function App() {
 
     return (
-      <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={theme}>
-          <CssBaseline>
-            <BrowserRouter>
-                <Topbar/>
-                <Routes>
-                    <Route exact path="/" element={<Home/> }/>
-                    <Route exact path="/Abyss" element={<Abyss/> }/>
-                    <Route exact path="/Ambush" element={<Ambush/> }/>
-                    <Route exact path="/Bestiary" element={<Bestiary/> }/>
-                    <Route exact path="/Betrayal" element={<Betrayal/> }/>
-                    <Route exact path="/Beyond" element={<Beyond/> }/>
-                    <Route exact path="/Blight" element={<Blight/> }/>
-                    <Route exact path="/Bloodlines" element={<Bloodlines/> }/>
-                    <Route exact path="/Breach" element={<Breach/> }/>
-                    <Route exact path="/Delirium" element={<Delirium/> }/>
-                    <Route exact path="/Delve" element={<Delve/> }/>
-                    <Route exact path="/Essence" element={<Essence/> }/>
-                    <Route exact path="/Expedition" element={<Expedition/> }/>
-                    <Route exact path="/Harbinger" element={<Harbinger/> }/>
-                    <Route exact path="/Harvest" element={<Harvest/> }/>
-                    <Route exact path="/Heist" element={<Heist/> }/>
-                    <Route exact path="/Incursion" element={<Incursion/> }/>
-                    <Route exact path="/Legion" element={<Legion/> }/>
-                    <Route exact path="/Metamorph" element={<Metamorph/> }/>
-                    <Route exact path="/Nemesis" element={<Nemesis/> }/>
-                    <Route exact path="/Ritual" element={<Ritual/> }/>
-                    <Route exact path="/Synthesis" element={<Synthesis/> }/>
-                    <Route exact path="/Torment" element={<Torment/> }/>
-                    <Route path='*' element={<Error/>}/>
-                </Routes>
-            </BrowserRouter>
-            </CssBaseline>
-        </ThemeProvider>
-      </StyledEngineProvider>
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+                <CssBaseline>
+                    <BrowserRouter>
+                        <NavBar/>
+                        <Routes>
+                            <Route exact path="/" element={<Home/> }/>
+                            <Route exact path="/Abyss" element={<Abyss/> }/>
+                            <Route exact path="/Ambush" element={<Ambush/> }/>
+                            <Route exact path="/Bestiary" element={<Bestiary/> }/>
+                            <Route exact path="/Betrayal" element={<Betrayal/> }/>
+                            <Route exact path="/Beyond" element={<Beyond/> }/>
+                            <Route exact path="/Blight" element={<Blight/> }/>
+                            <Route exact path="/Bloodlines" element={<Bloodlines/> }/>
+                            <Route exact path="/Breach" element={<Breach/> }/>
+                            <Route exact path="/Delirium" element={<Delirium/> }/>
+                            <Route exact path="/Delve" element={<Delve/> }/>
+                            <Route exact path="/Essence" element={<Essence/> }/>
+                            <Route exact path="/Expedition" element={<Expedition/> }/>
+                            <Route exact path="/Harbinger" element={<Harbinger/> }/>
+                            <Route exact path="/Harvest" element={<Harvest/> }/>
+                            <Route exact path="/Heist" element={<Heist/> }/>
+                            <Route exact path="/Incursion" element={<Incursion/> }/>
+                            <Route exact path="/Legion" element={<Legion/> }/>
+                            <Route exact path="/Metamorph" element={<Metamorph/> }/>
+                            <Route exact path="/Nemesis" element={<Nemesis/> }/>
+                            <Route exact path="/Ritual" element={<Ritual/> }/>
+                            <Route exact path="/Synthesis" element={<Synthesis/> }/>
+                            <Route exact path="/Torment" element={<Torment/> }/>
+                            <Route path='*' element={<Error/>}/>
+                        </Routes>
+                    </BrowserRouter>
+                </CssBaseline>
+            </ThemeProvider>
+        </StyledEngineProvider>
     );
 }
 
