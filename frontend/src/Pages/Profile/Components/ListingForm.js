@@ -50,7 +50,7 @@ function ListingForm() {
               />
             </Grid>
             <Button type="submit" fullWidth variant="contained">
-              Add listing
+              <Typography>Add listing</Typography>
             </Button>
           </Box>
         </Box>
