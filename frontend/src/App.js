@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
+import Market from "./Pages/Market/Market";
+import Error from "./Pages/Error/Error";
 import Ambush from "./Pages/Ambush/Ambush";
 import Abyss from "./Pages/Abyss/Abyss";
 import Bestiary from "./Pages/Bestiary/Bestiary";
@@ -24,14 +26,13 @@ import Nemesis from "./Pages/Nemesis/Nemesis";
 import Ritual from "./Pages/Ritual/Ritual";
 import Synthesis from "./Pages/Synthesis/Synthesis";
 import Torment from "./Pages/Torment/Torment";
-import Error from "./Pages/Error/Error";
 import {
   createTheme,
   ThemeProvider,
   StyledEngineProvider,
   CssBaseline,
 } from "@mui/material";
-import NavBar from "./Components/NavBar/NavBar";
+import NavBar from "./Components/NavBar";
 import Register from "./Pages/Register/Register";
 import Profile from "./Pages/Profile/Profile";
 
@@ -59,6 +60,7 @@ function App() {
               <Route exact path="/Login" element={<Login />} />
               <Route exact path="/Register" element={<Register />} />
               <Route exact path="/Profile" element={<Profile />} />
+              <Route exact path="/Market" element={<Market />} />
               <Route exact path="/Abyss" element={<Abyss />} />
               <Route exact path="/Ambush" element={<Ambush />} />
               <Route exact path="/Bestiary" element={<Bestiary />} />
