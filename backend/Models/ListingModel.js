@@ -11,6 +11,10 @@ const listingSchema = mongoose.Schema(
       type: String,
       required: [true, "Please add a text value"],
     },
+    username: {
+      type: String,
+      required: [true, "Please add a username"],
+    },
   },
   {
     timestamps: true,

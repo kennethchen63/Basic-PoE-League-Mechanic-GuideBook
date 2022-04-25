@@ -14,14 +14,16 @@ const getListings = asyncHandler(async (req, res) => {
 // Set Listings
 // POST /api/listings
 const setListing = asyncHandler(async (req, res) => {
-  if (!req.body.text) {
+  // Request = alistData: { text, username }
+  if (!req.body.alistData.text) {
     res.status(400);
     throw new Error("Please add a text field");
   }
 
   const listing = await Listing.create({
-    text: req.body.text,
+    text: req.body.alistData.text,
     user: req.user.id,
+    username: req.body.alistData.username,
   });
 
   res.status(200).json(listing);
