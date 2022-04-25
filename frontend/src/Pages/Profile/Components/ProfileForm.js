@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ListingForm from "./ListingForm";
@@ -11,9 +11,7 @@ function ProfileForm() {
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
-  const { listings, isLoading, isError, message } = useSelector(
-    (state) => state.listings
-  );
+  const { listings, isError, message } = useSelector((state) => state.listings);
 
   useEffect(() => {
     if (isError) {
@@ -38,17 +36,17 @@ function ProfileForm() {
       <Grid container justifyContent="center">
         <ListingForm />
       </Grid>
-      <Grid container justifyContent="center">
+      <Grid>
         {listings.length > 0 ? (
-          <Box>
+          <Grid container justifyContent="space-evenly">
             {listings.map((listing) => (
               <ListingItem key={listing._id} listing={listing} />
             ))}
-          </Box>
+          </Grid>
         ) : (
-          <Box>
+          <Grid container justifyContent="center">
             <Typography variant="h2"> You have no Listings </Typography>
-          </Box>
+          </Grid>
         )}
       </Grid>
     </Grid>

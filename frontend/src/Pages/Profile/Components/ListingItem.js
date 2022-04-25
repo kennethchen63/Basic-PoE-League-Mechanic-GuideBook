@@ -16,23 +16,30 @@ function ListingItem({ listing }) {
   const classes = useStyles();
 
   return (
-    <Grid container justifyContent="center">
-      <Box className={classes.box} sx={{ m: 2 }}>
-        <Grid container justifyContent="space-evenly">
-          <Typography variant="h6">
-            {new Date(listing.createdAt).toLocaleString("en-US")}
-          </Typography>
-        </Grid>
-        <Grid container justifyContent="center">
-          <Typography variant="h4">{listing.text}</Typography>
-        </Grid>
-        <Grid container justifyContent="center">
-          <Button onClick={() => dispatch(deleteListing(listing._id))}>
-            <Typography>X</Typography>
-          </Button>
-        </Grid>
-      </Box>
-    </Grid>
+    <Box className={classes.box} sx={{ m: 2 }}>
+      <Grid container justifyContent="center">
+        <Typography variant="h4">Listing</Typography>
+      </Grid>
+      <Grid container justifyContent="center" sx={{ mb: 2 }}>
+        <Typography variant="body1">{listing.text}</Typography>
+      </Grid>
+      <Grid container justifyContent="center">
+        <Typography variant="h4">Username</Typography>
+      </Grid>
+      <Grid container justifyContent="center" sx={{ mb: 2 }}>
+        <Typography variant="body1">{listing.username}</Typography>
+      </Grid>
+      <Grid container justifyContent="center">
+        <Typography variant="body1">
+          {new Date(listing.createdAt).toLocaleString("en-US")}
+        </Typography>
+      </Grid>
+      <Grid container justifyContent="center">
+        <Button onClick={() => dispatch(deleteListing(listing._id))}>
+          <Typography>X</Typography>
+        </Button>
+      </Grid>
+    </Box>
   );
 }
 

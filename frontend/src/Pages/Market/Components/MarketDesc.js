@@ -1,12 +1,21 @@
 import React, { useEffect } from "react";
 import { Grid, Typography, Box } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { useSelector, useDispatch } from "react-redux";
 import { getAllListings, reset } from "../../../Listings/AllListingSlice";
+
+const useStyles = makeStyles((theme) => ({
+  box: {
+    backgroundColor: "#121212",
+  },
+}));
 
 function MarketDesc({ alllistings }) {
   const dispatch = useDispatch();
 
-  const { listings, isLoading, isError, message } = useSelector(
+  const classes = useStyles();
+
+  const { listings, isError, message } = useSelector(
     (state) => state.alllistings
   );
 
@@ -27,20 +36,38 @@ function MarketDesc({ alllistings }) {
         Welcome to the Marketplace
       </Typography>
       <Grid container justifyContent="center">
-        <Typography align="center" variant="h4">
+        <Typography align="center" variant="h3">
           Here is all the current listings from other users
         </Typography>
       </Grid>
-      <Grid container justifyContent="center">
+      <Grid>
         {listings.length > 0 ? (
-          <Box>
+          <Grid container justifyContent="space-evenly">
             {listings.map((listing) => (
-              <Typography> {listing.text} </Typography>
+              <Box className={classes.box} sx={{ m: 2 }}>
+                <Grid container justifyContent="center">
+                  <Typography variant="h4">Listing</Typography>
+                </Grid>
+                <Grid container justifyContent="center" sx={{ mb: 2 }}>
+                  <Typography variant="body1">{listing.text}</Typography>
+                </Grid>
+                <Grid container justifyContent="center">
+                  <Typography variant="h4">Username</Typography>
+                </Grid>
+                <Grid container justifyContent="center" sx={{ mb: 2 }}>
+                  <Typography variant="body1">{listing.username}</Typography>
+                </Grid>
+                <Grid container justifyContent="center">
+                  <Typography variant="body1">
+                    {new Date(listing.createdAt).toLocaleString("en-US")}
+                  </Typography>
+                </Grid>
+              </Box>
             ))}
-          </Box>
+          </Grid>
         ) : (
-          <Box>
-            <Typography variant="h2"> You have no Listings </Typography>
+          <Box sx={{ m: 2 }}>
+            <Typography variant="h2"> There are no Listings </Typography>
           </Box>
         )}
       </Grid>
