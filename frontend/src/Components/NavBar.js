@@ -9,13 +9,16 @@ import {
   MenuItem,
   ListItem,
   Button,
+  Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import { useSelector, useDispatch } from "react-redux";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import StoreIcon from "@mui/icons-material/Store";
 
-import { logout, reset } from "../../Auth/authSlice";
+import { logout, reset } from "../Auth/authSlice";
 
 const leagues = [
   { name: "Abyss" },
@@ -69,34 +72,54 @@ function NavBar() {
     navigate("/");
   };
 
+  const goProfile = () => {
+    navigate("/Profile");
+  };
+
+  const goMarket = () => {
+    navigate("/Market");
+  };
+
   const classes = useStyles();
 
   return (
     <Box>
       <AppBar position="static">
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <IconButton size="large" id="basic-button" onClick={handleClick}>
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-          >
-            {leagues.map((leagues) => (
-              <MenuItem
-                style={{ backgroundColor: "gray" }}
-                component={Link}
-                to={leagues.name}
-              >
-                <Typography>{leagues.name}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
+          <Grid item>
+            <IconButton size="large" id="basic-button" onClick={handleClick}>
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+            >
+              {leagues.map((leagues) => (
+                <MenuItem
+                  style={{ backgroundColor: "gray" }}
+                  component={Link}
+                  to={leagues.name}
+                >
+                  <Typography>{leagues.name}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+            {user ? (
+              <IconButton onClick={goProfile}>
+                <AccountCircleIcon />
+              </IconButton>
+            ) : (
+              <></>
+            )}
+            <IconButton>
+              <StoreIcon onClick={goMarket} />
+            </IconButton>
+          </Grid>
           <Link to="/" className={classes.button}>
-            <Typography variant="h2">
-              Basic Guide Book to Path of Exile League Mechanics
+            <Typography variant="h3">
+              Basic Guide Book to Path of Exile's League Mechanics
             </Typography>
           </Link>
           <Box>
