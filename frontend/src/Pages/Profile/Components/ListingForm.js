@@ -4,19 +4,31 @@ import { Typography, Grid, Box, TextField, Button } from "@mui/material";
 import { createListing } from "../../../Listings/listingSlice";
 
 function ListingForm() {
-  const [text, setText] = useState("");
+  const [listData, setListData] = useState({
+    text: "",
+    username: "",
+  });
+
+  const { text, username } = listData;
 
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(createListing({ text }));
-    setText("");
+    const alistData = {
+      text,
+      username,
+    };
+
+    dispatch(createListing({ alistData }));
   };
 
   const handleChange = (e) => {
-    setText(e.target.value);
+    setListData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   return (
@@ -42,6 +54,18 @@ function ListingForm() {
                 type="text"
                 label="Your Listing"
                 value={text}
+                onChange={handleChange}
+                variant="outlined"
+                required
+                fullWidth
+                margin="normal"
+              />
+              <TextField
+                id="username"
+                name="username"
+                type="text"
+                label="Username"
+                value={username}
                 onChange={handleChange}
                 variant="outlined"
                 required
