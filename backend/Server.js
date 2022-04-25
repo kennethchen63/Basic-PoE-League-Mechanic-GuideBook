@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/listings", require("./Routes/listingRoutes"));
 app.use("/api/users", require("./Routes/userRoutes"));
+app.use("/api/AllListings", require("./Routes/AllListingRoutes"));
 
 app.use(errorHandler);
 
