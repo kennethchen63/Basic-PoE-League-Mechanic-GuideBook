@@ -14,3 +14,10 @@ The marketplace contains all listings that other users have created to put on th
 
 ## Login/Register Page
 The Login and Register Page is found at the top right, where the user can create an account to participate in the marketplace. If the user has an existing account, they can login with their information. Once logged in, there will be a profile icon next to the menu icon at the top right. Clicking this will direct you to your profile page, where you can create listings for the market and delete existing ones. 
+
+## Starting the Web Application
+
+1. Type "npm install" into your console to install backend packages.
+2. Type "npm run server" to run the local server that stores the database.
+3. Change Directory into the frontend and type "npm install" into the console to install all frontend packages.
+4. Type "npm start" to run the Web Application.
