@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Box, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useDispatch } from "react-redux";
-import { deleteGoal } from "../../../Goals/goalSlice";
+import { deleteListing } from "../../../Listings/listingSlice";
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function GoalItem({ goal }) {
+function ListingItem({ listing }) {
   const dispatch = useDispatch();
 
   const classes = useStyles();
@@ -20,14 +20,14 @@ function GoalItem({ goal }) {
       <Box className={classes.box} sx={{ m: 2 }}>
         <Grid container justifyContent="space-evenly">
           <Typography variant="h6">
-            {new Date(goal.createdAt).toLocaleString("en-US")}
+            {new Date(listing.createdAt).toLocaleString("en-US")}
           </Typography>
         </Grid>
         <Grid container justifyContent="center">
-          <Typography variant="h4">{goal.text}</Typography>
+          <Typography variant="h4">{listing.text}</Typography>
         </Grid>
         <Grid container justifyContent="center">
-          <Button onClick={() => dispatch(deleteGoal(goal._id))}>
+          <Button onClick={() => dispatch(deleteListing(listing._id))}>
             <Typography>X</Typography>
           </Button>
         </Grid>
@@ -36,4 +36,4 @@ function GoalItem({ goal }) {
   );
 }
 
-export default GoalItem;
+export default ListingItem;

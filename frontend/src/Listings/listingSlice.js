@@ -1,21 +1,21 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import goalService from "./goalService";
+import listingService from "./listingService";
 
 const initialState = {
-  goals: [],
+  listings: [],
   isError: false,
   isSuccess: false,
   isLoading: false,
   message: "",
 };
 
-// Create new Goal
-export const createGoal = createAsyncThunk(
-  "goals/create",
-  async (goalData, thunkAPI) => {
+// Create new Listing
+export const createListing = createAsyncThunk(
+  "listings/create",
+  async (listingData, thunkAPI) => {
     try {
       const token = thunkAPI.getState().auth.user.token;
-      return await goalService.createGoal(goalData, token);
+      return await listingService.createListing(listingData, token);
     } catch (error) {
       const message =
         (error.response &&
@@ -29,13 +29,13 @@ export const createGoal = createAsyncThunk(
   }
 );
 
-// Get user Goals
-export const getGoals = createAsyncThunk(
-  "goals/getAll",
+// Get user Listings
+export const getListings = createAsyncThunk(
+  "listings/getAll",
   async (_, thunkAPI) => {
     try {
       const token = thunkAPI.getState().auth.user.token;
-      return await goalService.getGoals(token);
+      return await listingService.getListings(token);
     } catch (error) {
       const message =
         (error.response &&
@@ -49,13 +49,13 @@ export const getGoals = createAsyncThunk(
   }
 );
 
-// Delete User Goal
-export const deleteGoal = createAsyncThunk(
-  "goals/delete",
+// Delete User Listing
+export const deleteListing = createAsyncThunk(
+  "listings/delete",
   async (id, thunkAPI) => {
     try {
       const token = thunkAPI.getState().auth.user.token;
-      return await goalService.deleteGoal(id, token);
+      return await listingService.deleteListing(id, token);
     } catch (error) {
       const message =
         (error.response &&
@@ -69,51 +69,51 @@ export const deleteGoal = createAsyncThunk(
   }
 );
 
-export const goalSlice = createSlice({
-  name: "goal",
+export const listingSlice = createSlice({
+  name: "listing",
   initialState,
   reducers: {
     reset: (state) => initialState,
   },
   extraReducers: (builder) => {
     builder
-      .addCase(createGoal.pending, (state) => {
+      .addCase(createListing.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(createGoal.fulfilled, (state, action) => {
+      .addCase(createListing.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.goals.push(action.payload);
+        state.listings.push(action.payload);
       })
-      .addCase(createGoal.rejected, (state, action) => {
+      .addCase(createListing.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
       })
-      .addCase(getGoals.pending, (state) => {
+      .addCase(getListings.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getGoals.fulfilled, (state, action) => {
+      .addCase(getListings.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.goals = action.payload;
+        state.listings = action.payload;
       })
-      .addCase(getGoals.rejected, (state, action) => {
+      .addCase(getListings.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
       })
-      .addCase(deleteGoal.pending, (state) => {
+      .addCase(deleteListing.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(deleteGoal.fulfilled, (state, action) => {
+      .addCase(deleteListing.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.goals = state.goals.filter(
-          (goal) => goal._id !== action.payload.id
+        state.listings = state.listings.filter(
+          (listing) => listing._id !== action.payload.id
         );
       })
-      .addCase(deleteGoal.rejected, (state, action) => {
+      .addCase(deleteListing.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
@@ -121,5 +121,5 @@ export const goalSlice = createSlice({
   },
 });
 
-export const { reset } = goalSlice.actions;
-export default goalSlice.reducer;
+export const { reset } = listingSlice.actions;
+export default listingSlice.reducer;

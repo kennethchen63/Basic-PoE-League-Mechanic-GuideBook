@@ -11,7 +11,6 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { login, reset } from "../../../Auth/authSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 
 function LoginForm() {
   const [formData, setFormData] = useState({
@@ -47,7 +46,7 @@ function LoginForm() {
 
   useEffect(() => {
     if (isError) {
-      toast.error(message);
+      alert(message);
     }
 
     if (isSuccess || user) {

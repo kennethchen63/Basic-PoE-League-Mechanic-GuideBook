@@ -3,16 +3,16 @@ import { Grid, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ListingForm from "./ListingForm";
-import { getGoals, reset } from "../../../Goals/goalSlice";
-import GoalItem from "./GoalItem";
+import { getListings, reset } from "../../../Listings/listingSlice";
+import ListingItem from "./ListingItem";
 
 function ProfileForm() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
-  const { goals, isLoading, isError, message } = useSelector(
-    (state) => state.goals
+  const { listings, isLoading, isError, message } = useSelector(
+    (state) => state.listings
   );
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function ProfileForm() {
       navigate("/");
     }
 
-    dispatch(getGoals());
+    dispatch(getListings());
 
     return () => {
       dispatch(reset());
@@ -39,15 +39,15 @@ function ProfileForm() {
         <ListingForm />
       </Grid>
       <Grid container justifyContent="center">
-        {goals.length > 0 ? (
+        {listings.length > 0 ? (
           <Box>
-            {goals.map((goal) => (
-              <GoalItem key={goal._id} goal={goal} />
+            {listings.map((listing) => (
+              <ListingItem key={listing._id} listing={listing} />
             ))}
           </Box>
         ) : (
           <Box>
-            <Typography variant="h2"> You have no Goals </Typography>
+            <Typography variant="h2"> You have no Listings </Typography>
           </Box>
         )}
       </Grid>

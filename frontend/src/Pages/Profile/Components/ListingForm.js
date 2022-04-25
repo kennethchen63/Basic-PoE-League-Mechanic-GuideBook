@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Typography, Grid, Box, TextField, Button } from "@mui/material";
-import { createGoal } from "../../../Goals/goalSlice";
+import { createListing } from "../../../Listings/listingSlice";
 
 function ListingForm() {
   const [text, setText] = useState("");
@@ -11,7 +11,7 @@ function ListingForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(createGoal({ text }));
+    dispatch(createListing({ text }));
     setText("");
   };
 
@@ -21,9 +21,6 @@ function ListingForm() {
 
   return (
     <Grid container justifyContent="center">
-      <Typography align="center" variant="h3">
-        Your Listings
-      </Typography>
       <Grid container justifyContent="center">
         <Box
           sx={{
