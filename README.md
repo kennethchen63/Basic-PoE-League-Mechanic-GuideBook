@@ -28,10 +28,10 @@ The Profile Page is found next to the menu icon at the top left when you are log
 ## Starting the Web Application
 
 1. Type "npm install" into your console to install backend packages.
-2. Type "npm run server" to run the local server that stores the database.
+2. Type "npm run server" to run the local server that stores the database.\*
 3. Change Directory into the frontend and type "npm install" into the console to install all frontend packages.
 4. Type "npm start" to run the Web Application.
 
-## Notes
+## Notes\*
 
-You will need to create your own local environment file (.env) that contains private information for the app to function. This should be located outside both the backend and frontend folders (same place as this current README). Additionally, you will need to create your own MongoDB to access your own database.
+You will need to create your own local environment file (.env) that contains private information for the app to function. This should be located outside both the backend and frontend folders (same place as this current README). Additionally, you will need to create and connect your own MongoDB to access your own database. Without these the backend will not work.
