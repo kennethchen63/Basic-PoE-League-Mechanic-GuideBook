@@ -15,9 +15,9 @@ const getListings = asyncHandler(async (req, res) => {
 // POST /api/listings
 const setListing = asyncHandler(async (req, res) => {
   // Request = alistData: { text, username }
-  if (!req.body.alistData.text) {
+  if (!req.body.alistData.text || !req.body.alistData.username) {
     res.status(400);
-    throw new Error("Please add a text field");
+    throw new Error("Please fill in all text fields");
   }
 
   const listing = await Listing.create({
@@ -32,19 +32,17 @@ const setListing = asyncHandler(async (req, res) => {
 // Update Listings
 //  PUT /api/listing/:id
 const updateListing = asyncHandler(async (req, res) => {
-  const listing = await Listing.findById({ user: req.user.id });
+  const listing = await Listing.findById(req.params.id);
 
   if (!listing) {
     res.status(400);
     throw new Error("Listing not found");
   }
-
   // Checks for user
   if (!req.user) {
     res.status(401);
     throw new Error("User not found");
   }
-
   // Makes sure the logged in user matches the listing's user
   if (listing.user.toString() !== req.user.id) {
     res.status(401);
@@ -58,7 +56,6 @@ const updateListing = asyncHandler(async (req, res) => {
       new: true,
     }
   );
-
   res.status(200).json(updatedListing);
 });
 

@@ -16,6 +16,9 @@ function ListingForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!text || !username) {
+      alert("Please fill in all fields");
+    }
     const alistData = {
       text,
       username,
@@ -73,7 +76,12 @@ function ListingForm() {
                 margin="normal"
               />
             </Grid>
-            <Button type="submit" fullWidth variant="contained">
+            <Button
+              style={{ textTransform: "none" }}
+              type="submit"
+              fullWidth
+              variant="contained"
+            >
               <Typography>Add listing</Typography>
             </Button>
           </Box>

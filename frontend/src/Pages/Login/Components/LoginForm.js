@@ -29,12 +29,17 @@ function LoginForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const userData = {
-      email,
-      password,
-    };
 
-    dispatch(login(userData));
+    if (!email || !password) {
+      alert("Please fill in all fields");
+    } else {
+      const userData = {
+        email,
+        password,
+      };
+
+      dispatch(login(userData));
+    }
   };
 
   const handleChange = (e) => {

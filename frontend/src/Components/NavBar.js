@@ -125,7 +125,11 @@ function NavBar() {
           <Box>
             {user ? (
               <>
-                <Button style={{ textTransform: "none" }} onClick={onLogout}>
+                <Button
+                  variant="contained"
+                  style={{ textTransform: "none" }}
+                  onClick={onLogout}
+                >
                   Log Out
                 </Button>
               </>
@@ -133,12 +137,22 @@ function NavBar() {
               <>
                 <ListItem>
                   <Link to="Login" className={classes.button}>
-                    <Typography>Login</Typography>
+                    <Button
+                      variant="contained"
+                      style={{ textTransform: "none" }}
+                    >
+                      Login
+                    </Button>
                   </Link>
                 </ListItem>
                 <ListItem>
                   <Link to="Register" className={classes.button}>
-                    <Typography>Register</Typography>
+                    <Button
+                      variant="contained"
+                      style={{ textTransform: "none" }}
+                    >
+                      Register
+                    </Button>
                   </Link>
                 </ListItem>
               </>
