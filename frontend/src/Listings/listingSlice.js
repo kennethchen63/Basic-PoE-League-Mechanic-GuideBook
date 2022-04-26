@@ -49,6 +49,30 @@ export const getListings = createAsyncThunk(
   }
 );
 
+// Update User Listing
+export const updateListing = createAsyncThunk(
+  "listings/update",
+  async (alistData, thunkAPI) => {
+    try {
+      const token = thunkAPI.getState().auth.user.token;
+      return await listingService.updateListing(
+        alistData.listing._id,
+        alistData,
+        token
+      );
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 // Delete User Listing
 export const deleteListing = createAsyncThunk(
   "listings/delete",
@@ -99,6 +123,21 @@ export const listingSlice = createSlice({
         state.listings = action.payload;
       })
       .addCase(getListings.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = true;
+        state.message = action.payload;
+      })
+      .addCase(updateListing.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(updateListing.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isSuccess = true;
+        state.listings = state.listings.filter(
+          (listing) => listing._id !== action.payload.id
+        );
+      })
+      .addCase(updateListing.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;

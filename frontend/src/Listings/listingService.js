@@ -26,6 +26,17 @@ const getListings = async (token) => {
   return response.data;
 };
 
+// Update User Listing
+const updateListing = async (listingId, alistData, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  const response = await axios.put(API_URL + listingId, alistData, config);
+  return response.data;
+};
+
 // Delete User Listing
 const deleteListing = async (listingId, token) => {
   const config = {
@@ -33,7 +44,6 @@ const deleteListing = async (listingId, token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-
   const response = await axios.delete(API_URL + listingId, config);
   return response.data;
 };
@@ -41,6 +51,7 @@ const deleteListing = async (listingId, token) => {
 const listingService = {
   createListing,
   getListings,
+  updateListing,
   deleteListing,
 };
 
